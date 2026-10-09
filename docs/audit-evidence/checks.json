@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-09",
+  "node": "24.19.0",
+  "bun": "1.4.2",
+  "installation": "bun install --frozen-lockfile --ignore-scripts",
+  "lint": {
+    "status": "FAIL",
+    "errors": 282,
+    "warnings": 6,
+    "rules": [
+      {
+        "rule": "@typescript-eslint/no-explicit-any",
+        "count": 1
+      },
+      {
+        "rule": "prefer-const",
+        "count": 1
+      },
+      {
+        "rule": "prettier/prettier",
+        "count": 280
+      },
+      {
+        "rule": "react-refresh/only-export-components",
+        "count": 6
+      }
+    ],
+    "files": [
+      {
+        "path": "src/components/AppShell.tsx",
+        "errors": 1,
+        "warnings": 0
+      },
+      {
+        "path": "src/components/ComingSoon.tsx",
+        "errors": 1,
+        "warnings": 0
+      },
+      {
+        "path": "src/components/ui/badge.tsx",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "path": "src/components/ui/button.tsx",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "path": "src/components/ui/form.tsx",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "path": "src/components/ui/navigation-menu.tsx",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "path": "src/components/ui/sidebar.tsx",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "path": "src/components/ui/toggle.tsx",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "path": "src/integrations/supabase/auth-attacher.ts",
+        "errors": 7,
+        "warnings": 0
+      },
+      {
+        "path": "src/integrations/supabase/auth-middleware.ts",
+        "errors": 41,
+        "warnings": 0
+      },
+      {
+        "path": "src/integrations/supabase/client.server.ts",
+        "errors": 13,
+        "warnings": 0
+      },
+      {
+        "path": "src/integrations/supabase/client.ts",
+        "errors": 21,
+        "warnings": 0
+      },
+      {
+        "path": "src/integrations/supabase/cron-auth.ts",
+        "errors": 14,
+        "warnings": 0
+      },
+      {
+        "path": "src/integrations/supabase/previewAuthStorage.ts",
+        "errors": 25,
+        "warnings": 0
+      },
+      {
+        "path": "src/integrations/supabase/types.ts",
+        "errors": 140,
+        "warnings": 0
+      },
+      {
+        "path": "src/lib/admin.functions.ts",
+        "errors": 11,
+        "warnings": 0
+      },
+      {
+        "path": "src/routes/_authenticated/dashboard.tsx",
+        "errors": 1,
+        "warnings": 0
+      },
+      {
+        "path": "src/routes/_authenticated/student.tsx",
+        "errors": 1,
+        "warnings": 0
+      },
+      {
+        "path": "src/routes/auth.tsx",
+        "errors": 6,
+        "warnings": 0
+      }
+    ]
+  },
+  "typecheck": {
+    "status": "PASS",
+    "command": "npm run typecheck"
+  },
+  "test": {
+    "status": "PASS",
+    "command": "npm run test",
+    "files": 1,
+    "tests": 1
+  },
+  "build": {
+    "status": "PASS",
+    "command": "npm run build",
+    "preset": "cloudflare-module"
+  },
+  "browser": {
+    "status": "PASS",
+    "scope": "Local public pages and unauthenticated role-route redirects only",
+    "routes": ["/student", "/faculty", "/admin", "/super-admin"],
+    "authViewportWidth": 360,
+    "authScrollWidth": 360,
+    "loginAndPrivilegedActions": "NOT RUN"
+  },
+  "githubExecution": "NOT RUN",
+  "liveSupabase": "NOT RUN",
+  "deployment": "NOT RUN",
+  "dependencyAudit": {
+    "status": "FAIL",
+    "command": "bun audit --json",
+    "packageGroups": 6,
+    "advisoryEntries": 15,
+    "criticalAdvisory": "GHSA-pqg4-j6r4-53mv",
+    "applicationExploit": "NOT VERIFIED"
+  }
+}

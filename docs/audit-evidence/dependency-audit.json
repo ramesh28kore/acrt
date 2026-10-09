@@ -1,0 +1,149 @@
+{
+  "brace-expansion": [
+    {
+      "id": 1130588,
+      "url": "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+      "title": "brace-expansion: DoS via unbounded expansion length causing an out-of-memory process crash",
+      "severity": "high",
+      "vulnerable_versions": "<1.1.17",
+      "cwe": ["CWE-400", "CWE-770"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1130734,
+      "url": "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+      "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
+      "severity": "high",
+      "vulnerable_versions": ">=4.0.0 <5.0.9",
+      "cwe": ["CWE-400", "CWE-770"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1130737,
+      "url": "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+      "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
+      "severity": "high",
+      "vulnerable_versions": "<1.1.18",
+      "cwe": ["CWE-400", "CWE-770"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1240107,
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "severity": "high",
+      "vulnerable_versions": ">=4.0.0 <5.0.11",
+      "cwe": ["CWE-400", "CWE-674"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1240108,
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "severity": "high",
+      "vulnerable_versions": "<1.1.19",
+      "cwe": ["CWE-400", "CWE-674"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1240111,
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "severity": "high",
+      "vulnerable_versions": ">=4.0.0 <5.0.10",
+      "cwe": ["CWE-400", "CWE-674"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1240100,
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "severity": "moderate",
+      "vulnerable_versions": "<1.1.21",
+      "cwe": ["CWE-400", "CWE-407"],
+      "cvss": { "score": 5.3, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L" }
+    },
+    {
+      "id": 1240103,
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "severity": "moderate",
+      "vulnerable_versions": ">=4.0.0 <5.0.12",
+      "cwe": ["CWE-400", "CWE-407"],
+      "cvss": { "score": 5.3, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L" }
+    },
+    {
+      "id": 1240104,
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "severity": "high",
+      "vulnerable_versions": "<1.1.20",
+      "cwe": ["CWE-400", "CWE-674"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    }
+  ],
+  "esbuild": [
+    {
+      "id": 1102341,
+      "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+      "title": "esbuild enables any website to send any requests to the development server and read the response",
+      "severity": "moderate",
+      "vulnerable_versions": "<=0.24.2",
+      "cwe": ["CWE-346"],
+      "cvss": { "score": 5.3, "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N" }
+    }
+  ],
+  "js-yaml": [
+    {
+      "id": 1138115,
+      "url": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported",
+      "severity": "high",
+      "vulnerable_versions": ">=4.0.0 <4.3.1",
+      "cwe": ["CWE-407"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    },
+    {
+      "id": 1193727,
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "severity": "high",
+      "vulnerable_versions": ">=4.0.0 <4.3.2",
+      "cwe": ["CWE-400", "CWE-407"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    }
+  ],
+  "nanoid": [
+    {
+      "id": 1139427,
+      "url": "https://github.com/advisories/GHSA-2v37-7h3g-55p8",
+      "title": "nanoid: custom generators can loop indefinitely when size is zero",
+      "severity": "high",
+      "vulnerable_versions": "<3.3.18",
+      "cwe": ["CWE-835"],
+      "cvss": { "score": 5.9, "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    }
+  ],
+  "shell-quote": [
+    {
+      "id": 1241332,
+      "url": "https://github.com/advisories/GHSA-pqg4-j6r4-53mv",
+      "title": "shell-quote: `quote()` command injection via a line terminator in a token after a `{ comment }` token",
+      "severity": "critical",
+      "vulnerable_versions": ">=1.8.4 <1.11.0",
+      "cwe": ["CWE-78"],
+      "cvss": { "score": 8.1, "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H" }
+    }
+  ],
+  "source-map-js": [
+    {
+      "id": 1241209,
+      "url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "title": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "severity": "high",
+      "vulnerable_versions": ">=1.0.0 <1.2.2",
+      "cwe": ["CWE-1284"],
+      "cvss": { "score": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H" }
+    }
+  ]
+}

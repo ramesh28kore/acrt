@@ -1,0 +1,94 @@
+{
+  "engine": "PostgreSQL 17.5 on aarch64-unknown-linux-gnu, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+  "scope": "Unmodified repository migration; synthetic auth schema/users; in-memory PostgreSQL only. No live Supabase, Auth, or PostgREST was tested.",
+  "results": [
+    {
+      "check": "Student cannot select other profiles",
+      "status": "PASS",
+      "evidence": "Only the student's own row was returned."
+    },
+    {
+      "check": "Student cannot directly grant a role",
+      "status": "PASS",
+      "evidence": "INSERT rejected with SQLSTATE 42501."
+    },
+    {
+      "check": "Protected profile columns cannot be changed by their owner",
+      "status": "FAIL",
+      "evidence": {
+        "institute_id": "b26c6a8a-6200-4ea5-bb02-0b968663dbba",
+        "email": "changed@example.invalid",
+        "roll_number": "OTHER",
+        "is_active": false
+      }
+    },
+    {
+      "check": "Faculty access is limited to assigned students",
+      "status": "FAIL",
+      "evidence": {
+        "visibleProfileIds": [
+          "00000000-0000-4000-8000-000000000003",
+          "00000000-0000-4000-8000-000000000004",
+          "00000000-0000-4000-8000-000000000005"
+        ],
+        "sameCollegeAdminVisible": true
+      }
+    },
+    {
+      "check": "Admin cannot change institute to read another college",
+      "status": "FAIL",
+      "evidence": {
+        "crossCollegeRowsBefore": 0,
+        "crossCollegeRowsAfter": 1
+      }
+    },
+    {
+      "check": "Inactive accounts cannot read application data",
+      "status": "FAIL",
+      "evidence": [
+        {
+          "id": "00000000-0000-4000-8000-000000000005",
+          "is_active": false
+        }
+      ]
+    },
+    {
+      "check": "Inactive account cannot reactivate itself",
+      "status": "FAIL",
+      "evidence": [
+        {
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "check": "Anonymous caller cannot query another user's institute and role through RPC helpers",
+      "status": "FAIL",
+      "evidence": [
+        {
+          "institute_id": "b26c6a8a-6200-4ea5-bb02-0b968663dbba",
+          "is_admin": true
+        }
+      ]
+    },
+    {
+      "check": "Anonymous caller cannot select profiles directly",
+      "status": "PASS",
+      "evidence": "SELECT rejected with SQLSTATE 42501."
+    },
+    {
+      "check": "Sign-in audit metadata is server authoritative",
+      "status": "FAIL",
+      "evidence": [
+        {
+          "institute_id": "b26c6a8a-6200-4ea5-bb02-0b968663dbba",
+          "target_id": "00000000-0000-4000-8000-000000000004",
+          "created_at": "2099-01-01T00:00:00.000Z",
+          "details": {
+            "claimed": "arbitrary"
+          }
+        }
+      ]
+    }
+  ]
+}
