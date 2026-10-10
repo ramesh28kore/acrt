@@ -24,8 +24,9 @@ The audit verified Node.js **24.19.0** and Bun **1.4.2**. Install from the
 committed Bun lockfile rather than creating a second lockfile.
 
 For a fresh clone, copy `.env.example` to `.env.local`, fill in your Supabase
-project's public URL and publishable key, and provision the schema from
-`drizzle/migrations/0000_migration.sql` in that project's database.
+project's public URL and publishable key, and apply the SQL files in
+`drizzle/migrations/` in numeric order to that project's database. Account
+management also requires the server-only service role key.
 
 ```sh
 bun install --frozen-lockfile --ignore-scripts
@@ -54,13 +55,20 @@ overrides it through the ignored `.env.local`, including a local-only server
 key. Environment files are excluded from Git; `.env.example` documents the
 required names without credentials.
 
-- `src/routes/`: public pages and four role dashboard shells.
-- `src/lib/`: profile queries, UX role guards, dormant administrative functions,
-  and error handling.
+- `src/routes/`: public pages, working admin and super admin panels, and student/faculty dashboard shells.
+- `src/components/admin/`: institute overview, student/faculty accounts, and activity.
+- `src/components/super-admin/`: overview, user and institute management, roles, and activity.
+- `src/lib/`: profile queries, UX role guards, authenticated administration
+  server functions, input contracts, and error handling.
 - `src/integrations/supabase/`: generated clients, auth middleware, and types.
-- `drizzle/migrations/`: one migration creating four RLS-enabled tables.
+- `drizzle/migrations/`: the initial schema and admin/super admin authorization migrations.
 - `supabase/config.toml`: hosted project ID only; no complete local DB setup.
-- `src/test/`: one route-matching test and setup.
+- `src/test/`: routing, dashboard workflows, input validation, and export tests.
+
+See [super admin dashboard](docs/super-admin-dashboard.md) for features,
+database setup, authorization behavior, and verification commands.
+See [admin dashboard](docs/admin-dashboard.md) for institute administration,
+and [module architecture](docs/module-architecture.md) for the implementation sequence.
 
 ## Checks and current status
 
@@ -73,8 +81,8 @@ required names without credentials.
 | `npm run audit:deps` | Dependency advisories; requires Bun on PATH and registry access |
 | `npm run preview`    | Local artifact preview                                          |
 
-On 9 October 2026, type checking, the single routing test, and the build pass.
-Lint fails with **282 errors and 6 warnings**. Dependency auditing fails with
+The initial 9 October 2026 audit passed type checking, the single routing test,
+and the build. It recorded **282 lint errors and 6 warnings**. Dependency auditing found
 **15 advisory entries across 6 package groups**, including a critical advisory
 in a development dependency. LMS features remain planned, and authorization
 has unresolved findings. **This scaffold is not ready for production.**
