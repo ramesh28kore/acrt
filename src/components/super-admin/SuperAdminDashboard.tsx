@@ -121,7 +121,7 @@ export function SuperAdminDashboard() {
     }
   }
   return (
-    <div className="min-h-dvh bg-slate-50 text-slate-900 selection:bg-teal-100">
+    <div className="min-h-dvh bg-background text-foreground selection:bg-accent">
       <a
         href="#super-admin-main"
         className="sr-only z-50 rounded-lg bg-white p-3 focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
@@ -140,12 +140,12 @@ export function SuperAdminDashboard() {
         className={`fixed inset-y-0 left-0 z-40 w-60 flex-col border-r border-slate-200 bg-white ${mobileOpen ? "flex" : "hidden lg:flex"}`}
       >
         <div className="flex h-20 items-center gap-3 px-6">
-          <span className="grid size-10 place-items-center rounded-xl bg-teal-700 text-white">
+          <span className="grid size-10 place-items-center rounded-lg bg-primary text-white">
             <GraduationCap className="size-6" />
           </span>
           <div>
             <span className="text-lg font-bold tracking-tight">
-              avanthi<span className="text-teal-600">.</span>
+              avanthi<span className="text-primary">.</span>
             </span>
             <p className="text-[10px] font-medium tracking-[0.18em] text-slate-400">CRT PORTAL</p>
           </div>
@@ -166,15 +166,13 @@ export function SuperAdminDashboard() {
               key={item.id}
               aria-current={section === item.id ? "page" : undefined}
               onClick={() => show(item.id)}
-              className={`group flex w-full items-center gap-3 rounded-lg px-3 py-3 text-left text-[13px] font-medium transition-colors focus-visible:outline-teal-600 ${section === item.id ? "bg-teal-50 text-teal-800" : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"}`}
+              className={`group flex w-full items-center gap-3 rounded-md px-3 py-3 text-left text-[13px] font-medium transition-colors focus-visible:outline-primary ${section === item.id ? "bg-cyan-50 text-cyan-800" : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"}`}
             >
               <item.icon
-                className={`size-[18px] ${section === item.id ? "text-teal-700" : "text-slate-400"}`}
+                className={`size-[18px] ${section === item.id ? "text-primary" : "text-slate-400"}`}
               />
               {item.label}
-              {section === item.id && (
-                <span className="ml-auto size-1.5 rounded-full bg-teal-600" />
-              )}
+              {section === item.id && <span className="ml-auto size-1.5 rounded-full bg-primary" />}
             </button>
           ))}
         </nav>

@@ -1,0 +1,225 @@
+{
+  "baseline": "c0d508f",
+  "scope": "isolated synthetic database with migrations 0000–0002",
+  "checks": [
+    {
+      "id": "faculty-assignment-boundary",
+      "status": "FAIL",
+      "observed": 3,
+      "expected": 0,
+      "evidence": "Faculty with no assignments reads 3 other PT profiles, including both administrators."
+    },
+    {
+      "id": "authenticated-helper-scope",
+      "status": "FAIL",
+      "observed": true,
+      "expected": false,
+      "evidence": "Student learns a Q6 admin's institute and role from public helpers using a known UUID."
+    },
+    {
+      "id": "disabled-account-residual-access",
+      "status": "FAIL",
+      "observed": 4,
+      "expected": 0,
+      "evidence": "Disabled student still reads own profile and both institutes, and updates own name (1+2+1)."
+    },
+    {
+      "id": "disabled-self-reactivation-denied",
+      "status": "PASS"
+    },
+    {
+      "id": "audit-redaction-boundary",
+      "status": "FAIL",
+      "observed": true,
+      "expected": false,
+      "evidence": "Admin RPC redacts fields, but authenticated SELECT on audit_logs still exposes the raw scoped row."
+    },
+    {
+      "id": "sign-in-event-authority",
+      "status": "FAIL",
+      "observed": 2,
+      "expected": 0,
+      "evidence": "A valid session can add 2 sign_in events without a new provider authentication; metadata is stamped but event occurrence is self-reported."
+    },
+    {
+      "id": "self-profile-edit-audited",
+      "status": "FAIL",
+      "observed": 0,
+      "expected": 1,
+      "evidence": "Direct own-name update creates no audit event; displayed actor names join current profiles."
+    },
+    {
+      "id": "privileged-rpc-denies-student",
+      "status": "PASS"
+    },
+    {
+      "id": "anonymous-helper-denied",
+      "status": "PASS"
+    }
+  ],
+  "inventory": {
+    "postgres": "PostgreSQL 17.5 on aarch64-unknown-linux-gnu, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.74 (1092ec30a3fb1d46b1782ff1b4db5094d3d06ae5), 32-bit",
+    "tables": [
+      {
+        "tablename": "audit_logs",
+        "rowsecurity": true
+      },
+      {
+        "tablename": "institutes",
+        "rowsecurity": true
+      },
+      {
+        "tablename": "profiles",
+        "rowsecurity": true
+      },
+      {
+        "tablename": "user_roles",
+        "rowsecurity": true
+      }
+    ],
+    "policies": [
+      {
+        "tablename": "audit_logs",
+        "policyname": "Admin reads college audit",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "audit_logs",
+        "policyname": "Super admin reads audit",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "audit_logs",
+        "policyname": "Users log own sign-in",
+        "cmd": "INSERT"
+      },
+      {
+        "tablename": "institutes",
+        "policyname": "Signed-in users read institutes",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "profiles",
+        "policyname": "Admin reads own college profiles",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "profiles",
+        "policyname": "Faculty reads own college profiles",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "profiles",
+        "policyname": "Own profile",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "profiles",
+        "policyname": "Super admin reads all profiles",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "profiles",
+        "policyname": "Update own name",
+        "cmd": "UPDATE"
+      },
+      {
+        "tablename": "user_roles",
+        "policyname": "Admin reads college roles",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "user_roles",
+        "policyname": "Own roles",
+        "cmd": "SELECT"
+      },
+      {
+        "tablename": "user_roles",
+        "policyname": "Super admin reads roles",
+        "cmd": "SELECT"
+      }
+    ],
+    "functions": [
+      {
+        "proname": "admin_dashboard_activity",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "admin_dashboard_overview",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "admin_dashboard_users",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "admin_institute",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "admin_save_user",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "assert_super_admin",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "handle_new_user",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "has_role",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "protect_profile_columns",
+        "prosecdef": false,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "stamp_login_audit",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "super_admin_activity",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "super_admin_overview",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "super_admin_save_institute",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "super_admin_update_user",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "super_admin_users",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      },
+      {
+        "proname": "user_institute",
+        "prosecdef": true,
+        "proconfig": ["search_path=\"\""]
+      }
+    ]
+  }
+}

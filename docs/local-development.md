@@ -1,5 +1,14 @@
 # Local development accounts
 
+> **10 October 2026 audit update:** Docker currently runs `avanthi-portal`,
+> whose working-directory label is `D:\1.AVNT\CRT`. The owner identified it as
+> the intended backend while retaining `D:\1.AVNT\ACRT` for development.
+> Both use local port 54321, but the running schema is incompatible with ACRT.
+> The commands and saved accounts below describe the earlier isolated setup,
+> not a verified restart procedure for the intended backend. Do not run its
+> provisioning or migration scripts against the running database. See the
+> [M00 audit](repository-audit-2026-10-10.md) for reconciliation prerequisites.
+
 These instructions restart the prepared setup in this Windows workspace. The
 ignored local setup files and accounts are not included in a fresh GitHub clone.
 
@@ -14,12 +23,12 @@ Git ignore rule. They contain local credentials and must not be committed.
 
 Open <http://127.0.0.1:8080/auth>. The four development accounts are:
 
-| Role | Email | Institute |
-| --- | --- | --- |
+| Role        | Email                   | Institute      |
+| ----------- | ----------------------- | -------------- |
 | Super admin | superadmin@avanthi.test | All institutes |
-| Admin | admin@avanthi.test | PT |
-| Faculty | faculty@avanthi.test | PT |
-| Student | student@avanthi.test | PT |
+| Admin       | admin@avanthi.test      | PT             |
+| Faculty     | faculty@avanthi.test    | PT             |
+| Student     | student@avanthi.test    | PT             |
 
 Generated passwords are saved in `.supabase.local/accounts.json`. These accounts
 belong to the isolated local database. Account provisioning confirms the emails
@@ -64,8 +73,10 @@ node .supabase.local/seed-accounts.mjs
 
 The script accepts only `http://127.0.0.1:54321`, uses the saved passwords, and
 does not reset passwords for existing accounts. The setup uses a copy of the
-repository's existing migration; the authorization findings in the repository
-audit still apply. Role dashboard pages remain scaffold placeholders.
+repository's migration. Its applied migration state has not been reverified
+against the intended backend. Admin and Super Admin pages now contain account
+management; Student and Faculty pages remain placeholders. Consult the current
+M00 audit for the remaining authorization findings.
 
 To reconnect the application to the original hosted backend, move `.env.local`
 to a filename Vite does not load, then restart the development server.

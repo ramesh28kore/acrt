@@ -1,0 +1,3157 @@
+{
+  "observedAt": "2026-10-10",
+  "scope": "Read-only metadata from the local backend identified by the user as intended for ACRT; no account rows or credential values read.",
+  "developmentRepository": "D:\\1.AVNT\\ACRT",
+  "dockerProject": "avanthi-portal",
+  "dockerWorkdir": "D:\\1.AVNT\\CRT",
+  "postgres": "17.6",
+  "localGateway": "http://127.0.0.1:54321",
+  "userDecision": "Keep D:\\1.AVNT\\ACRT and reconcile its backend.",
+  "tables": [
+    {
+      "tablename": "academic_years",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "access_settings",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "admin_role_permissions",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "admin_roles",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "attendance",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "audit_log",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "bookmarks",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "branches",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "class_members",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "classes",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "discussion_replies",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "discussion_threads",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "discussion_votes",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "feature_flags",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "institutes",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "invitations",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "join_codes",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "lesson_progress",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "mcq_answer_keys",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "mcq_attempts",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "mcq_sets",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "mcqs",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "playground_programs",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "problem_solutions",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "problem_tutorials",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "problem_validations",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "problems",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "profiles",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "sections",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "sets",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "sheets",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "submissions",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_cases",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_answer_keys",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_answers",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_attempts",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_coding_cases",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_coding_drafts",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_coding_questions",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_coding_submissions",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_feedback",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_questions",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "test_series_violations",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "topics",
+      "rowsecurity": true
+    }
+  ],
+  "profileColumns": [
+    {
+      "column_name": "id",
+      "data_type": "uuid"
+    },
+    {
+      "column_name": "role",
+      "data_type": "text"
+    },
+    {
+      "column_name": "full_name",
+      "data_type": "text"
+    },
+    {
+      "column_name": "email",
+      "data_type": "text"
+    },
+    {
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "column_name": "username",
+      "data_type": "text"
+    },
+    {
+      "column_name": "must_change_credentials",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "course_start_date",
+      "data_type": "date"
+    },
+    {
+      "column_name": "roll_number",
+      "data_type": "text"
+    },
+    {
+      "column_name": "year",
+      "data_type": "smallint"
+    },
+    {
+      "column_name": "branch_id",
+      "data_type": "uuid"
+    },
+    {
+      "column_name": "section_id",
+      "data_type": "uuid"
+    },
+    {
+      "column_name": "institute_id",
+      "data_type": "uuid"
+    },
+    {
+      "column_name": "is_super_admin",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "is_disabled",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "disabled_at",
+      "data_type": "timestamp with time zone"
+    },
+    {
+      "column_name": "admin_role_id",
+      "data_type": "uuid"
+    }
+  ],
+  "migrations": [
+    {
+      "version": "20260810094148",
+      "name": "initial_schema"
+    },
+    {
+      "version": "20260810161736",
+      "name": "table_grants"
+    },
+    {
+      "version": "20260810180000",
+      "name": "problem_solutions"
+    },
+    {
+      "version": "20260810180100",
+      "name": "problem_solutions_service_grant"
+    },
+    {
+      "version": "20260810190000",
+      "name": "sheets_pdf_storage"
+    },
+    {
+      "version": "20260810200000",
+      "name": "publish_gating"
+    },
+    {
+      "version": "20260810200100",
+      "name": "publish_toggle_rpc"
+    },
+    {
+      "version": "20260810210000",
+      "name": "admin_role_rpc"
+    },
+    {
+      "version": "20260811090000",
+      "name": "lesson_progress"
+    },
+    {
+      "version": "20260811100000",
+      "name": "test_cases"
+    },
+    {
+      "version": "20260812090000",
+      "name": "mcq_exam_engine"
+    },
+    {
+      "version": "20260812120000",
+      "name": "profile_credentials"
+    },
+    {
+      "version": "20260815090000",
+      "name": "problem_validations"
+    },
+    {
+      "version": "20260815120000",
+      "name": "course_start_date"
+    },
+    {
+      "version": "20260816090000",
+      "name": "academic_structure"
+    },
+    {
+      "version": "20260816103000",
+      "name": "fix_academic_guard_service_role"
+    },
+    {
+      "version": "20260816150000",
+      "name": "code_playground"
+    },
+    {
+      "version": "20260816160000",
+      "name": "performance_analytics"
+    },
+    {
+      "version": "20260817090000",
+      "name": "problem_discussions"
+    },
+    {
+      "version": "20260817140000",
+      "name": "institutes"
+    },
+    {
+      "version": "20260817170000",
+      "name": "class_faculty_optional"
+    },
+    {
+      "version": "20260819120000",
+      "name": "lock_username_email_self_edit"
+    },
+    {
+      "version": "20260823090000",
+      "name": "python_course_default_start"
+    },
+    {
+      "version": "20260826100000",
+      "name": "department_login_access"
+    },
+    {
+      "version": "20260826110000",
+      "name": "activity_query_indexes"
+    },
+    {
+      "version": "20260826120000",
+      "name": "class_login_access"
+    },
+    {
+      "version": "20260826130000",
+      "name": "timetable_class_setup"
+    },
+    {
+      "version": "20260826140000",
+      "name": "department_performance_by_year"
+    },
+    {
+      "version": "20260826150000",
+      "name": "department_year_precision"
+    },
+    {
+      "version": "20260826160000",
+      "name": "pt_year4_csm_csd"
+    },
+    {
+      "version": "20260916100000",
+      "name": "official_solutions"
+    },
+    {
+      "version": "20260916110000",
+      "name": "problem_tutorials"
+    },
+    {
+      "version": "20260919120000",
+      "name": "public_submissions"
+    },
+    {
+      "version": "20260919121000",
+      "name": "public_submissions_revoke_anon"
+    },
+    {
+      "version": "20260919130000",
+      "name": "tutorial_solution_steps"
+    },
+    {
+      "version": "20260923100000",
+      "name": "test_series"
+    },
+    {
+      "version": "20260923120000",
+      "name": "test_series_variable_options"
+    },
+    {
+      "version": "20260923140000",
+      "name": "test_series_feedback_review"
+    },
+    {
+      "version": "20260923150000",
+      "name": "test_series_no_per_question_key"
+    },
+    {
+      "version": "20260923160000",
+      "name": "test_series_option_index_search_path"
+    },
+    {
+      "version": "20260923170000",
+      "name": "test_series_time_limit"
+    },
+    {
+      "version": "20260925100000",
+      "name": "super_admin"
+    },
+    {
+      "version": "20260925110000",
+      "name": "profiles_disabled_at_stamp"
+    },
+    {
+      "version": "20260925120000",
+      "name": "close_anon_rpc_access"
+    },
+    {
+      "version": "20260926100000",
+      "name": "coding_test_series"
+    },
+    {
+      "version": "20260926110000",
+      "name": "test_series_leave_warnings"
+    },
+    {
+      "version": "20260926120000",
+      "name": "separate_super_admin_account"
+    },
+    {
+      "version": "20260926130000",
+      "name": "faculty_activity_report"
+    },
+    {
+      "version": "20260926140000",
+      "name": "admin_login_attempts"
+    },
+    {
+      "version": "20260926150000",
+      "name": "staff_login_attempts"
+    },
+    {
+      "version": "20261005120000",
+      "name": "attendance"
+    },
+    {
+      "version": "20261005140000",
+      "name": "attendance_backfill"
+    }
+  ],
+  "policies": [
+    {
+      "tablename": "academic_years",
+      "policyname": "academic_years_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "academic_years",
+      "policyname": "academic_years_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "access_settings",
+      "policyname": "access_settings_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "access_settings",
+      "policyname": "access_settings_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "admin_role_permissions",
+      "policyname": "admin_role_permissions_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": null
+    },
+    {
+      "tablename": "admin_role_permissions",
+      "policyname": "admin_role_permissions_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "is_super_admin()",
+      "with_check": "is_super_admin()"
+    },
+    {
+      "tablename": "admin_roles",
+      "policyname": "admin_roles_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": null
+    },
+    {
+      "tablename": "admin_roles",
+      "policyname": "admin_roles_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "is_super_admin()",
+      "with_check": "is_super_admin()"
+    },
+    {
+      "tablename": "attendance",
+      "policyname": "attendance_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "( SELECT is_super_admin() AS is_super_admin)",
+      "with_check": null
+    },
+    {
+      "tablename": "audit_log",
+      "policyname": "audit_log_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "is_super_admin()",
+      "with_check": null
+    },
+    {
+      "tablename": "bookmarks",
+      "policyname": "bookmarks_owner",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(student_id = auth.uid())",
+      "with_check": "(student_id = auth.uid())"
+    },
+    {
+      "tablename": "branches",
+      "policyname": "branches_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "branches",
+      "policyname": "branches_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "class_members",
+      "policyname": "class_members_delete",
+      "roles": ["authenticated"],
+      "cmd": "DELETE",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": null
+    },
+    {
+      "tablename": "class_members",
+      "policyname": "class_members_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "class_members",
+      "policyname": "class_members_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR is_class_faculty(class_id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "class_members",
+      "policyname": "class_members_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "classes",
+      "policyname": "classes_delete",
+      "roles": ["authenticated"],
+      "cmd": "DELETE",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": null
+    },
+    {
+      "tablename": "classes",
+      "policyname": "classes_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "classes",
+      "policyname": "classes_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((faculty_id = auth.uid()) OR is_class_member(id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "classes",
+      "policyname": "classes_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "discussion_replies",
+      "policyname": "discussion_replies_delete",
+      "roles": ["authenticated"],
+      "cmd": "DELETE",
+      "qual": "((author_id = auth.uid()) OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "discussion_replies",
+      "policyname": "discussion_replies_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(author_id = auth.uid())"
+    },
+    {
+      "tablename": "discussion_replies",
+      "policyname": "discussion_replies_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "discussion_replies",
+      "policyname": "discussion_replies_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(author_id = auth.uid())",
+      "with_check": "(author_id = auth.uid())"
+    },
+    {
+      "tablename": "discussion_threads",
+      "policyname": "discussion_threads_delete",
+      "roles": ["authenticated"],
+      "cmd": "DELETE",
+      "qual": "((author_id = auth.uid()) OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "discussion_threads",
+      "policyname": "discussion_threads_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(author_id = auth.uid())"
+    },
+    {
+      "tablename": "discussion_threads",
+      "policyname": "discussion_threads_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "discussion_threads",
+      "policyname": "discussion_threads_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "((author_id = auth.uid()) OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": "((author_id = auth.uid()) OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))"
+    },
+    {
+      "tablename": "discussion_votes",
+      "policyname": "discussion_votes_delete",
+      "roles": ["authenticated"],
+      "cmd": "DELETE",
+      "qual": "(voter_id = auth.uid())",
+      "with_check": null
+    },
+    {
+      "tablename": "discussion_votes",
+      "policyname": "discussion_votes_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(voter_id = auth.uid())"
+    },
+    {
+      "tablename": "discussion_votes",
+      "policyname": "discussion_votes_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "feature_flags",
+      "policyname": "feature_flags_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "feature_flags",
+      "policyname": "feature_flags_write",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "is_super_admin()",
+      "with_check": "is_super_admin()"
+    },
+    {
+      "tablename": "institutes",
+      "policyname": "institutes_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "institutes",
+      "policyname": "institutes_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "invitations",
+      "policyname": "invitations_manage",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "((created_by = auth.uid()) OR (current_profile_role() = 'admin'::text) OR ((class_id IS NOT NULL) AND is_class_faculty(class_id)))",
+      "with_check": "((created_by = auth.uid()) AND (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))"
+    },
+    {
+      "tablename": "join_codes",
+      "policyname": "join_codes_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_class_faculty(class_id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "join_codes",
+      "policyname": "join_codes_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "lesson_progress",
+      "policyname": "lesson_progress_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "((student_id = auth.uid()) AND login_allowed())"
+    },
+    {
+      "tablename": "lesson_progress",
+      "policyname": "lesson_progress_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR faculty_can_view_student(student_id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "lesson_progress",
+      "policyname": "lesson_progress_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(student_id = auth.uid())",
+      "with_check": "((student_id = auth.uid()) AND login_allowed())"
+    },
+    {
+      "tablename": "mcq_answer_keys",
+      "policyname": "mcq_answer_keys_faculty_admin",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))"
+    },
+    {
+      "tablename": "mcq_attempts",
+      "policyname": "mcq_attempts_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "((student_id = auth.uid()) AND login_allowed())"
+    },
+    {
+      "tablename": "mcq_attempts",
+      "policyname": "mcq_attempts_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR faculty_can_view_student(student_id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "mcq_attempts",
+      "policyname": "mcq_attempts_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(student_id = auth.uid())",
+      "with_check": "((student_id = auth.uid()) AND login_allowed())"
+    },
+    {
+      "tablename": "mcq_sets",
+      "policyname": "mcq_sets_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "mcq_sets",
+      "policyname": "mcq_sets_select_published_or_staff",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_published OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "mcqs",
+      "policyname": "mcqs_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "mcqs",
+      "policyname": "mcqs_select_authenticated",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "playground_programs",
+      "policyname": "playground_programs_delete",
+      "roles": ["authenticated"],
+      "cmd": "DELETE",
+      "qual": "(owner_id = auth.uid())",
+      "with_check": null
+    },
+    {
+      "tablename": "playground_programs",
+      "policyname": "playground_programs_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(owner_id = auth.uid())"
+    },
+    {
+      "tablename": "playground_programs",
+      "policyname": "playground_programs_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((owner_id = auth.uid()) OR faculty_can_view_student(owner_id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "playground_programs",
+      "policyname": "playground_programs_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(owner_id = auth.uid())",
+      "with_check": "(owner_id = auth.uid())"
+    },
+    {
+      "tablename": "problem_solutions",
+      "policyname": "problem_solutions_faculty_admin",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))"
+    },
+    {
+      "tablename": "problem_tutorials",
+      "policyname": "problem_tutorials_faculty_admin",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))"
+    },
+    {
+      "tablename": "problem_validations",
+      "policyname": "problem_validations_staff_read",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": null
+    },
+    {
+      "tablename": "problem_validations",
+      "policyname": "problem_validations_staff_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))"
+    },
+    {
+      "tablename": "problems",
+      "policyname": "problems_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "problems",
+      "policyname": "problems_select_authenticated",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "profiles",
+      "policyname": "profiles_select_self_or_visible",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(id))",
+      "with_check": null
+    },
+    {
+      "tablename": "profiles",
+      "policyname": "profiles_staff_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "((id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(id))",
+      "with_check": "((id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(id))"
+    },
+    {
+      "tablename": "profiles",
+      "policyname": "profiles_update_self",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(id = auth.uid())",
+      "with_check": "(id = auth.uid())"
+    },
+    {
+      "tablename": "sections",
+      "policyname": "sections_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "true",
+      "with_check": null
+    },
+    {
+      "tablename": "sections",
+      "policyname": "sections_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "sets",
+      "policyname": "sets_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "sets",
+      "policyname": "sets_select_published_or_staff",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_published OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "sheets",
+      "policyname": "sheets_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "sheets",
+      "policyname": "sheets_select_published_or_staff",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_published OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "submissions",
+      "policyname": "submissions_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "((student_id = auth.uid()) AND login_allowed())"
+    },
+    {
+      "tablename": "submissions",
+      "policyname": "submissions_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR faculty_can_view_student(student_id) OR (current_profile_role() = 'admin'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "submissions",
+      "policyname": "submissions_update",
+      "roles": ["authenticated"],
+      "cmd": "UPDATE",
+      "qual": "(student_id = auth.uid())",
+      "with_check": "((student_id = auth.uid()) AND login_allowed())"
+    },
+    {
+      "tablename": "test_cases",
+      "policyname": "test_cases_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_sample OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_cases",
+      "policyname": "test_cases_staff_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))"
+    },
+    {
+      "tablename": "test_series",
+      "policyname": "test_series_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "test_series",
+      "policyname": "test_series_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_enabled OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_answer_keys",
+      "policyname": "test_series_answer_keys_admin_insert",
+      "roles": ["authenticated"],
+      "cmd": "INSERT",
+      "qual": null,
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "test_series_answer_keys",
+      "policyname": "test_series_answer_keys_staff_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_answers",
+      "policyname": "test_series_answers_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((current_profile_role() = 'admin'::text) OR (EXISTS ( SELECT 1\n   FROM test_series_attempts a\n  WHERE ((a.id = test_series_answers.attempt_id) AND ((a.student_id = auth.uid()) OR faculty_can_view_student(a.student_id))))))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_attempts",
+      "policyname": "test_series_attempts_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(student_id))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_coding_cases",
+      "policyname": "tscc_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "test_series_coding_cases",
+      "policyname": "tscc_staff_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text]))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_coding_drafts",
+      "policyname": "tscd_own",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(EXISTS ( SELECT 1\n   FROM test_series_attempts a\n  WHERE ((a.id = test_series_coding_drafts.attempt_id) AND (a.student_id = auth.uid()))))",
+      "with_check": "(EXISTS ( SELECT 1\n   FROM test_series_attempts a\n  WHERE ((a.id = test_series_coding_drafts.attempt_id) AND (a.student_id = auth.uid()) AND (a.status = 'in_progress'::text))))"
+    },
+    {
+      "tablename": "test_series_coding_questions",
+      "policyname": "tscq_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "test_series_coding_questions",
+      "policyname": "tscq_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])) OR (EXISTS ( SELECT 1\n   FROM (test_series_attempts a\n     JOIN test_series t ON ((t.id = a.test_id)))\n  WHERE ((a.test_id = test_series_coding_questions.test_id) AND (a.student_id = auth.uid()) AND (t.is_enabled OR (a.status = 'completed'::text))))))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_coding_submissions",
+      "policyname": "tscs_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(student_id))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_feedback",
+      "policyname": "test_series_feedback_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(student_id))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_questions",
+      "policyname": "test_series_questions_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "test_series_questions",
+      "policyname": "test_series_questions_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])) OR (EXISTS ( SELECT 1\n   FROM test_series_attempts a\n  WHERE ((a.test_id = test_series_questions.test_id) AND (a.student_id = auth.uid())))))",
+      "with_check": null
+    },
+    {
+      "tablename": "test_series_violations",
+      "policyname": "tsv_select",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "((student_id = auth.uid()) OR (current_profile_role() = 'admin'::text) OR faculty_can_view_student(student_id))",
+      "with_check": null
+    },
+    {
+      "tablename": "topics",
+      "policyname": "topics_admin_write",
+      "roles": ["authenticated"],
+      "cmd": "ALL",
+      "qual": "(current_profile_role() = 'admin'::text)",
+      "with_check": "(current_profile_role() = 'admin'::text)"
+    },
+    {
+      "tablename": "topics",
+      "policyname": "topics_select_published_or_staff",
+      "roles": ["authenticated"],
+      "cmd": "SELECT",
+      "qual": "(is_published OR (current_profile_role() = ANY (ARRAY['faculty'::text, 'admin'::text])))",
+      "with_check": null
+    }
+  ],
+  "functions": [
+    {
+      "proname": "access_gaps",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "admin_department_daily",
+      "args": "p_days integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "admin_department_performance",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "admin_department_performance_by_year",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "admin_has_permission",
+      "args": "p_module text, p_action text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "attendance_on_activity",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres"]
+    },
+    {
+      "proname": "attendance_record",
+      "args": "p_student uuid, p_type text, p_ref uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres"]
+    },
+    {
+      "proname": "attendance_report",
+      "args": "p_date date, p_institute uuid, p_year integer, p_branch uuid, p_section uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "attendance_student_history",
+      "args": "p_roll text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "audit_log_append_only",
+      "args": "",
+      "prosecdef": false,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres"]
+    },
+    {
+      "proname": "class_login_access",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "class_login_restricted",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "current_profile_role",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "daily_top_performers",
+      "args": "p_limit integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "default_course_start_date",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "department_login_access",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "department_login_restricted",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "discussion_participants",
+      "args": "p_problem_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "enforce_admin_module",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "enforce_feature_flag",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "faculty_activity_report",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public, auth"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "faculty_can_view_student",
+      "args": "target_student_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "feature_available",
+      "args": "p_key text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "is_class_faculty",
+      "args": "target_class_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "is_class_member",
+      "args": "target_class_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "is_super_admin",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "lesson_progress_forward_only",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres"]
+    },
+    {
+      "proname": "login_allowed",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "login_allowed_for",
+      "args": "p_user uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "my_access_context",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "my_admin_permissions",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "my_daily_rank",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "prevent_role_self_escalation",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "problem_is_live_test_source",
+      "args": "p_problem_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "profiles_guard_privileges",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "profiles_prevent_academic_self_edit",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "profiles_stamp_disabled_at",
+      "args": "",
+      "prosecdef": false,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres"]
+    },
+    {
+      "proname": "public_submissions",
+      "args": "p_problem_id uuid, p_limit integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_allow_unassigned",
+      "args": "p_allow boolean",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_class_login_access",
+      "args": "p_class_ids uuid[]",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_department_login_access",
+      "args": "p_branch_ids uuid[]",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_mcq_set_duration",
+      "args": "target_id uuid, minutes integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_mcq_set_published",
+      "args": "target_id uuid, published boolean",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_profile_role",
+      "args": "target_id uuid, new_role text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_set_published",
+      "args": "target_id uuid, published boolean",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_sheet_published",
+      "args": "target_id uuid, published boolean",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_topic_published",
+      "args": "target_id uuid, published boolean",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "set_updated_at",
+      "args": "",
+      "prosecdef": false,
+      "proconfig": null,
+      "proacl": null
+    },
+    {
+      "proname": "super_admin_analytics",
+      "args": "p_days integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public, auth"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "super_admin_last_sign_in",
+      "args": "p_ids uuid[]",
+      "prosecdef": true,
+      "proconfig": ["search_path=public, auth"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "super_admin_login_attempts",
+      "args": "p_days integer, p_limit integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "super_admin_overview",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public, auth"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "super_admin_staff_login_attempts",
+      "args": "p_days integer, p_limit integer",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_close_expired",
+      "args": "p_test_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_coding_recompute",
+      "args": "p_attempt_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_coding_record",
+      "args": "p_attempt_id uuid, p_question_id uuid, p_student_id uuid, p_code text, p_passed integer, p_total integer, p_verdict text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_confirm_answers",
+      "args": "p_test_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_deadline",
+      "args": "p_attempt_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_finish_attempt",
+      "args": "p_attempt_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_finish_if_expired",
+      "args": "p_attempt_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_option_index",
+      "args": "p_letter text",
+      "prosecdef": false,
+      "proconfig": ["search_path=\"\""],
+      "proacl": null
+    },
+    {
+      "proname": "test_series_record_violation",
+      "args": "p_attempt_id uuid, p_reason text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_review",
+      "args": "p_attempt_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_set_answer",
+      "args": "p_question_id uuid, p_correct_option text, p_explanation text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_start",
+      "args": "p_test_id uuid",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_submit_answer",
+      "args": "p_attempt_id uuid, p_question_id uuid, p_selected text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "test_series_submit_feedback",
+      "args": "p_attempt_id uuid, p_rating integer, p_comment text",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    },
+    {
+      "proname": "unplaced_student_count",
+      "args": "",
+      "prosecdef": true,
+      "proconfig": ["search_path=public"],
+      "proacl": ["postgres=X/postgres", "authenticated=X/postgres", "service_role=X/postgres"]
+    }
+  ],
+  "securityMetadata": {
+    "definitions": [
+      {
+        "proname": "admin_has_permission",
+        "definition": "CREATE OR REPLACE FUNCTION public.admin_has_permission(p_module text, p_action text)\n RETURNS boolean\n LANGUAGE plpgsql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\ndeclare\n  v_role text;\n  v_super boolean;\n  v_disabled boolean;\n  v_admin_role uuid;\nbegin\n  select p.role, p.is_super_admin, p.is_disabled, p.admin_role_id\n    into v_role, v_super, v_disabled, v_admin_role\n  from public.profiles p where p.id = auth.uid();\n\n  if v_role is distinct from 'admin' or coalesce(v_disabled, false) then return false; end if;\n  if v_super then return true; end if;\n  -- Every admin may read and export student performance.\n  if p_module = 'reports' and p_action in ('view', 'export') then return true; end if;\n  if v_admin_role is null then return false; end if;\n  return exists (\n    select 1 from public.admin_role_permissions rp\n    where rp.role_id = v_admin_role\n      and rp.module = p_module\n      and (rp.action = p_action or rp.action = 'manage')\n  );\nend;\n$function$\n"
+      },
+      {
+        "proname": "attendance_report",
+        "definition": "CREATE OR REPLACE FUNCTION public.attendance_report(p_date date, p_institute uuid DEFAULT NULL::uuid, p_year integer DEFAULT NULL::integer, p_branch uuid DEFAULT NULL::uuid, p_section uuid DEFAULT NULL::uuid)\n RETURNS jsonb\n LANGUAGE plpgsql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\ndeclare\n  v jsonb;\nbegin\n  if not public.is_super_admin() then\n    raise exception 'Student attendance is not available for your access scope.' using errcode = '42501';\n  end if;\n  if p_date is null then\n    raise exception 'Choose a date.' using errcode = '22023';\n  end if;\n\n  with cohort as (\n    select p.id,\n           p.roll_number,\n           p.full_name,\n           p.email,\n           i.code as institute_code,\n           s.year,\n           b.code as branch_code,\n           s.name as section_name,\n           a.activity_type,\n           a.marked_at,\n           a.signin_log_id,\n           p.is_disabled as disabled,\n           -- login_allowed_for() is false for a disabled account too.\n           (a.id is not null or public.login_allowed_for(p.id)) as listed\n    from public.profiles p\n    join public.sections s on s.id = p.section_id and s.is_active\n    join public.branches b on b.id = s.branch_id\n    left join public.institutes i on i.id = coalesce(s.institute_id, p.institute_id)\n    left join public.attendance a on a.student_id = p.id and a.attendance_date = p_date\n    where p.role = 'student'\n      and coalesce(i.is_active, true)\n      and (p_institute is null or coalesce(s.institute_id, p.institute_id) = p_institute)\n      and (p_year is null or s.year = p_year)\n      and (p_branch is null or s.branch_id = p_branch)\n      and (p_section is null or s.id = p_section)\n  )\n  select jsonb_build_object(\n    'total', count(*) filter (where c.listed),\n    'present', count(c.activity_type),\n    -- Students of this cohort who cannot sign in at the moment (disabled\n    -- accounts are not counted here; they are off the roster altogether).\n    'loginClosed', count(*) filter (where not c.listed and not c.disabled),\n    'rows', coalesce(jsonb_agg(jsonb_build_object(\n      'studentId', c.id,\n      'rollNumber', c.roll_number,\n      'fullName', c.full_name,\n      'email', c.email,\n      'instituteCode', c.institute_code,\n      'year', c.year,\n      'branchCode', c.branch_code,\n      'sectionName', c.section_name,\n      'activityType', c.activity_type,\n      'markedAt', c.marked_at,\n      'signedInThatDay', c.signin_log_id is not null\n    ) order by c.institute_code, c.year, c.branch_code, c.section_name, upper(c.roll_number) nulls last, c.email)\n      filter (where c.listed), '[]'::jsonb)\n  ) into v\n  from cohort c;\n\n  return v;\nend;\n$function$\n"
+      },
+      {
+        "proname": "attendance_student_history",
+        "definition": "CREATE OR REPLACE FUNCTION public.attendance_student_history(p_roll text)\n RETURNS jsonb\n LANGUAGE plpgsql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\ndeclare\n  v_today date := (now() at time zone 'Asia/Kolkata')::date;\n  v_began date;\n  v_session date;\n  v_student record;\nbegin\n  if not public.is_super_admin() then\n    raise exception 'Student attendance is not available for your access scope.' using errcode = '42501';\n  end if;\n\n  select p.id,\n         p.roll_number,\n         p.full_name,\n         p.email,\n         p.course_start_date,\n         (p.created_at at time zone 'Asia/Kolkata')::date as created_day,\n         p.is_disabled,\n         i.code as institute_code,\n         coalesce(s.year, p.year) as year,\n         coalesce(sb.code, pb.code) as branch_code,\n         s.name as section_name\n    into v_student\n  from public.profiles p\n  left join public.sections s on s.id = p.section_id\n  left join public.branches sb on sb.id = s.branch_id\n  left join public.branches pb on pb.id = p.branch_id\n  left join public.institutes i on i.id = coalesce(s.institute_id, p.institute_id)\n  where upper(p.roll_number) = upper(btrim(coalesce(p_roll, '')))\n    and p.role = 'student';\n\n  if not found then\n    return null;\n  end if;\n\n  select min(a.attendance_date) into v_began from public.attendance a;\n  select y.start_date into v_session\n  from public.academic_years y where y.is_active order by y.start_date desc limit 1;\n\n  return jsonb_build_object(\n    'student', jsonb_build_object(\n      'studentId', v_student.id,\n      'rollNumber', v_student.roll_number,\n      'fullName', v_student.full_name,\n      'email', v_student.email,\n      'instituteCode', v_student.institute_code,\n      'year', v_student.year,\n      'branchCode', v_student.branch_code,\n      'sectionName', v_student.section_name,\n      'disabled', v_student.is_disabled\n    ),\n    -- greatest() skips nulls; with no attendance anywhere yet there is no range.\n    'from', case when v_began is null then null\n                 else greatest(v_began, v_student.course_start_date, v_session, v_student.created_day) end,\n    'today', v_today,\n    'records', coalesce((\n      select jsonb_agg(jsonb_build_object(\n        'date', a.attendance_date,\n        'activityType', a.activity_type,\n        'markedAt', a.marked_at,\n        'signedInThatDay', a.signin_log_id is not null\n      ) order by a.attendance_date desc)\n      from public.attendance a\n      where a.student_id = v_student.id\n    ), '[]'::jsonb)\n  );\nend;\n$function$\n"
+      },
+      {
+        "proname": "current_profile_role",
+        "definition": "CREATE OR REPLACE FUNCTION public.current_profile_role()\n RETURNS text\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\n  select coalesce((select role from public.profiles where id = auth.uid()), 'none');\n$function$\n"
+      },
+      {
+        "proname": "enforce_admin_module",
+        "definition": "CREATE OR REPLACE FUNCTION public.enforce_admin_module()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\ndeclare\n  v_action text;\n  v_alt text := case when tg_nargs > 1 then tg_argv[1] else null end;\n  v_cols text[] := case when tg_nargs > 2 then string_to_array(tg_argv[2], ',') else '{}'::text[] end\n                   || array['updated_at'];\nbegin\n  if auth.uid() is null or public.current_profile_role() is distinct from 'admin' then\n    return case when tg_op = 'DELETE' then old else new end;\n  end if;\n\n  v_action := case tg_op when 'INSERT' then 'create' when 'UPDATE' then 'edit' else 'delete' end;\n\n  if public.admin_has_permission(tg_argv[0], v_action) then\n    return case when tg_op = 'DELETE' then old else new end;\n  end if;\n\n  if tg_op = 'UPDATE' and v_alt is not null\n     and public.admin_has_permission(v_alt, 'configure')\n     and (to_jsonb(new) - v_cols) = (to_jsonb(old) - v_cols) then\n    return new;\n  end if;\n\n  raise exception 'Your admin account does not have permission to % in %.', v_action, tg_argv[0]\n    using errcode = '42501';\nend;\n$function$\n"
+      },
+      {
+        "proname": "enforce_feature_flag",
+        "definition": "CREATE OR REPLACE FUNCTION public.enforce_feature_flag()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nbegin\n  if auth.uid() is not null and not public.feature_available(tg_argv[0]) then\n    raise exception 'This feature is turned off right now.' using errcode = '42501';\n  end if;\n  return case when tg_op = 'DELETE' then old else new end;\nend;\n$function$\n"
+      },
+      {
+        "proname": "faculty_can_view_student",
+        "definition": "CREATE OR REPLACE FUNCTION public.faculty_can_view_student(target_student_id uuid)\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\n  select exists (\n    select 1\n    from public.class_members cm\n    join public.classes c on c.id = cm.class_id\n    where cm.student_id = target_student_id\n      and c.faculty_id = auth.uid()\n  );\n$function$\n"
+      },
+      {
+        "proname": "is_super_admin",
+        "definition": "CREATE OR REPLACE FUNCTION public.is_super_admin()\n RETURNS boolean\n LANGUAGE sql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\n  select coalesce(\n    (select p.is_super_admin and p.role = 'admin' and not p.is_disabled\n     from public.profiles p where p.id = auth.uid()),\n    false);\n$function$\n"
+      },
+      {
+        "proname": "login_allowed_for",
+        "definition": "CREATE OR REPLACE FUNCTION public.login_allowed_for(p_user uuid)\n RETURNS boolean\n LANGUAGE plpgsql\n STABLE SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\ndeclare\n  v_role     text;\n  v_branch   uuid;\n  v_disabled boolean;\n  v_open     boolean;   -- allow_unassigned\n  v_dept     boolean;\n  v_class    boolean;\nbegin\n  select p.role, p.branch_id, p.is_disabled into v_role, v_branch, v_disabled\n  from public.profiles p\n  where p.id = p_user;\n\n  if v_role is null then return false; end if;      -- unknown user\n  if coalesce(v_disabled, false) then return false; end if;\n  if v_role <> 'student' then return true; end if;  -- staff are never gated\n\n  select coalesce(a.allow_unassigned, true) into v_open\n  from public.access_settings a where a.id;\n  v_open := coalesce(v_open, true);\n\n  -- Department gate.\n  if not public.department_login_restricted() then\n    v_dept := true;\n  elsif v_branch is null then\n    v_dept := v_open;\n  else\n    v_dept := exists (\n      select 1 from public.branches b\n      where b.id = v_branch and b.is_active and b.login_enabled\n    );\n  end if;\n\n  -- Class gate.\n  if not public.class_login_restricted() then\n    v_class := true;\n  elsif not exists (\n    select 1 from public.class_members cm\n    join public.classes c on c.id = cm.class_id\n    where cm.student_id = p_user and c.status = 'active'\n  ) then\n    v_class := v_open;\n  else\n    v_class := exists (\n      select 1 from public.class_members cm\n      join public.classes c on c.id = cm.class_id\n      where cm.student_id = p_user\n        and c.status = 'active'\n        and c.login_enabled\n    );\n  end if;\n\n  return v_dept and v_class;\nend;\n$function$\n"
+      },
+      {
+        "proname": "profiles_guard_privileges",
+        "definition": "CREATE OR REPLACE FUNCTION public.profiles_guard_privileges()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\ndeclare\n  v_caller_role text;\n  v_super boolean;\nbegin\n  if auth.uid() is null then\n    return case when tg_op = 'DELETE' then old else new end;\n  end if;\n\n  v_caller_role := public.current_profile_role();\n  v_super := public.is_super_admin();\n\n  if tg_op = 'DELETE' then\n    if old.id = auth.uid() then\n      raise exception 'You cannot delete your own account.' using errcode = '42501';\n    end if;\n    if not v_super and (old.role = 'admin' or not public.admin_has_permission('users', 'delete')) then\n      raise exception 'You do not have permission to delete this account.' using errcode = '42501';\n    end if;\n    return old;\n  end if;\n\n  if tg_op = 'INSERT' then\n    if not v_super and (new.role = 'admin' or new.is_super_admin or new.admin_role_id is not null) then\n      raise exception 'Only a super admin can create admin accounts.' using errcode = '42501';\n    end if;\n    return new;\n  end if;\n\n  -- UPDATE ------------------------------------------------------------------\n\n  -- Nobody but a super admin grants or removes admin powers.\n  if not v_super then\n    if new.is_super_admin is distinct from old.is_super_admin\n       or new.admin_role_id is distinct from old.admin_role_id\n       or (new.role = 'admin') is distinct from (old.role = 'admin') then\n      raise exception 'Only a super admin can change admin privileges.' using errcode = '42501';\n    end if;\n  end if;\n\n  -- The disable switch is an administrator's decision: a disabled student must\n  -- not be able to switch themselves back on through profiles_update_self, and\n  -- faculty (profiles_staff_update) must not be able to flip it either.\n  if new.is_disabled is distinct from old.is_disabled then\n    if v_caller_role is distinct from 'admin' then\n      raise exception 'Only an administrator can enable or disable accounts.' using errcode = '42501';\n    end if;\n    if old.id = auth.uid() then\n      raise exception 'You cannot disable your own account.' using errcode = '42501';\n    end if;\n  end if;\n\n  -- A plain admin may edit their own row (name) and — with users.edit — student\n  -- and faculty rows. Other admins' rows belong to the super admin.\n  if v_caller_role = 'admin' and not v_super and old.id <> auth.uid() then\n    if old.role = 'admin' then\n      raise exception 'Only a super admin can modify another admin account.' using errcode = '42501';\n    end if;\n    if not public.admin_has_permission('users', 'edit') then\n      raise exception 'Your admin account does not have permission to edit users.' using errcode = '42501';\n    end if;\n  end if;\n\n  if new.is_super_admin and new.role <> 'admin' then\n    raise exception 'A super admin must hold the admin role.' using errcode = '23514';\n  end if;\n\n  -- A super admin cannot lock themselves out; another super admin can.\n  if old.id = auth.uid() and old.is_super_admin\n     and (not new.is_super_admin or new.role <> 'admin' or new.is_disabled) then\n    raise exception 'You cannot remove your own super admin access.' using errcode = '42501';\n  end if;\n\n  if new.is_disabled and not old.is_disabled then\n    new.disabled_at := now();\n  elsif not new.is_disabled then\n    new.disabled_at := null;\n  end if;\n\n  return new;\nend;\n$function$\n"
+      },
+      {
+        "proname": "profiles_prevent_academic_self_edit",
+        "definition": "CREATE OR REPLACE FUNCTION public.profiles_prevent_academic_self_edit()\n RETURNS trigger\n LANGUAGE plpgsql\n SECURITY DEFINER\n SET search_path TO 'public'\nAS $function$\nbegin\n  if auth.uid() is null then\n    return new;\n  end if;\n  if public.current_profile_role() = 'admin' then\n    return new;\n  end if;\n  if new.roll_number is distinct from old.roll_number\n     or new.year is distinct from old.year\n     or new.branch_id is distinct from old.branch_id\n     or new.section_id is distinct from old.section_id\n     or new.institute_id is distinct from old.institute_id then\n    raise exception 'Only admins can change roll number, year, branch, section or institute';\n  end if;\n  if new.username is distinct from old.username\n     or new.email is distinct from old.email then\n    raise exception 'Only admins can change username or email';\n  end if;\n  return new;\nend;\n$function$\n"
+      }
+    ],
+    "triggers": [
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_prevent_role_escalation",
+        "action_statement": "EXECUTE FUNCTION prevent_role_self_escalation()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "submissions",
+        "trigger_name": "submissions_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "mcq_attempts",
+        "trigger_name": "mcq_attempts_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "problem_solutions",
+        "trigger_name": "problem_solutions_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "lesson_progress",
+        "trigger_name": "lesson_progress_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_prevent_academic_self_edit_trg",
+        "action_statement": "EXECUTE FUNCTION profiles_prevent_academic_self_edit()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "playground_programs",
+        "trigger_name": "playground_programs_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "discussion_threads",
+        "trigger_name": "discussion_threads_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "discussion_replies",
+        "trigger_name": "discussion_replies_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "problem_tutorials",
+        "trigger_name": "problem_tutorials_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series",
+        "trigger_name": "test_series_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_questions",
+        "trigger_name": "test_series_questions_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "admin_roles",
+        "trigger_name": "admin_roles_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "invitations",
+        "trigger_name": "invitations_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('users')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "invitations",
+        "trigger_name": "invitations_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('users')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "invitations",
+        "trigger_name": "invitations_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('users')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "institutes",
+        "trigger_name": "institutes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "institutes",
+        "trigger_name": "institutes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "institutes",
+        "trigger_name": "institutes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "academic_years",
+        "trigger_name": "academic_years_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'is_active')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "academic_years",
+        "trigger_name": "academic_years_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'is_active')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "academic_years",
+        "trigger_name": "academic_years_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'is_active')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "branches",
+        "trigger_name": "branches_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'login_enabled')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "branches",
+        "trigger_name": "branches_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'login_enabled')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "branches",
+        "trigger_name": "branches_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'login_enabled')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "sections",
+        "trigger_name": "sections_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "sections",
+        "trigger_name": "sections_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "sections",
+        "trigger_name": "sections_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "classes",
+        "trigger_name": "classes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'login_enabled')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "classes",
+        "trigger_name": "classes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'login_enabled')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "classes",
+        "trigger_name": "classes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics', 'settings', 'login_enabled')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "class_members",
+        "trigger_name": "class_members_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "class_members",
+        "trigger_name": "class_members_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "class_members",
+        "trigger_name": "class_members_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "join_codes",
+        "trigger_name": "join_codes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "join_codes",
+        "trigger_name": "join_codes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "join_codes",
+        "trigger_name": "join_codes_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('academics')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "access_settings",
+        "trigger_name": "access_settings_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('settings')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "access_settings",
+        "trigger_name": "access_settings_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('settings')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "access_settings",
+        "trigger_name": "access_settings_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('settings')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "topics",
+        "trigger_name": "topics_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "topics",
+        "trigger_name": "topics_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "topics",
+        "trigger_name": "topics_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "sets",
+        "trigger_name": "sets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "sets",
+        "trigger_name": "sets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "sets",
+        "trigger_name": "sets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "sheets",
+        "trigger_name": "sheets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "sheets",
+        "trigger_name": "sheets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "sheets",
+        "trigger_name": "sheets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "problems",
+        "trigger_name": "problems_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "problems",
+        "trigger_name": "problems_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "problems",
+        "trigger_name": "problems_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "mcq_sets",
+        "trigger_name": "mcq_sets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "mcq_sets",
+        "trigger_name": "mcq_sets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "mcq_sets",
+        "trigger_name": "mcq_sets_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "mcqs",
+        "trigger_name": "mcqs_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "mcqs",
+        "trigger_name": "mcqs_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "mcqs",
+        "trigger_name": "mcqs_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "mcq_answer_keys",
+        "trigger_name": "mcq_answer_keys_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "mcq_answer_keys",
+        "trigger_name": "mcq_answer_keys_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "mcq_answer_keys",
+        "trigger_name": "mcq_answer_keys_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_cases",
+        "trigger_name": "test_cases_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_cases",
+        "trigger_name": "test_cases_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "test_cases",
+        "trigger_name": "test_cases_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "problem_solutions",
+        "trigger_name": "problem_solutions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "problem_solutions",
+        "trigger_name": "problem_solutions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "problem_solutions",
+        "trigger_name": "problem_solutions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "problem_tutorials",
+        "trigger_name": "problem_tutorials_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "problem_tutorials",
+        "trigger_name": "problem_tutorials_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "problem_tutorials",
+        "trigger_name": "problem_tutorials_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "problem_validations",
+        "trigger_name": "problem_validations_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "problem_validations",
+        "trigger_name": "problem_validations_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "problem_validations",
+        "trigger_name": "problem_validations_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('content')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series",
+        "trigger_name": "test_series_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series",
+        "trigger_name": "test_series_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "test_series",
+        "trigger_name": "test_series_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_questions",
+        "trigger_name": "test_series_questions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_questions",
+        "trigger_name": "test_series_questions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "test_series_questions",
+        "trigger_name": "test_series_questions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_answer_keys",
+        "trigger_name": "test_series_answer_keys_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_answer_keys",
+        "trigger_name": "test_series_answer_keys_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "test_series_answer_keys",
+        "trigger_name": "test_series_answer_keys_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_guard_privileges",
+        "action_statement": "EXECUTE FUNCTION profiles_guard_privileges()",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_guard_privileges",
+        "action_statement": "EXECUTE FUNCTION profiles_guard_privileges()",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_guard_privileges",
+        "action_statement": "EXECUTE FUNCTION profiles_guard_privileges()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "audit_log",
+        "trigger_name": "audit_log_append_only",
+        "action_statement": "EXECUTE FUNCTION audit_log_append_only()",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "audit_log",
+        "trigger_name": "audit_log_append_only",
+        "action_statement": "EXECUTE FUNCTION audit_log_append_only()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_attempts",
+        "trigger_name": "test_series_attempts_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_answers",
+        "trigger_name": "test_series_answers_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "playground_programs",
+        "trigger_name": "playground_programs_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('playground')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "playground_programs",
+        "trigger_name": "playground_programs_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('playground')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "discussion_threads",
+        "trigger_name": "discussion_threads_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('discussions')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "discussion_replies",
+        "trigger_name": "discussion_replies_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('discussions')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "discussion_votes",
+        "trigger_name": "discussion_votes_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('discussions')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_stamp_disabled_at",
+        "action_statement": "EXECUTE FUNCTION profiles_stamp_disabled_at()",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "profiles",
+        "trigger_name": "profiles_stamp_disabled_at",
+        "action_statement": "EXECUTE FUNCTION profiles_stamp_disabled_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_coding_questions",
+        "trigger_name": "test_series_coding_questions_set_updated_at",
+        "action_statement": "EXECUTE FUNCTION set_updated_at()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_coding_questions",
+        "trigger_name": "test_series_coding_questions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_coding_questions",
+        "trigger_name": "test_series_coding_questions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "test_series_coding_questions",
+        "trigger_name": "test_series_coding_questions_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_coding_cases",
+        "trigger_name": "test_series_coding_cases_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_coding_cases",
+        "trigger_name": "test_series_coding_cases_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "DELETE"
+      },
+      {
+        "event_object_table": "test_series_coding_cases",
+        "trigger_name": "test_series_coding_cases_enforce_admin_module",
+        "action_statement": "EXECUTE FUNCTION enforce_admin_module('test_series')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "test_series_coding_drafts",
+        "trigger_name": "test_series_coding_drafts_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('test_series')",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_coding_drafts",
+        "trigger_name": "test_series_coding_drafts_feature_flag",
+        "action_statement": "EXECUTE FUNCTION enforce_feature_flag('test_series')",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "lesson_progress",
+        "trigger_name": "lesson_progress_attendance_insert",
+        "action_statement": "EXECUTE FUNCTION attendance_on_activity()",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "lesson_progress",
+        "trigger_name": "lesson_progress_attendance_update",
+        "action_statement": "EXECUTE FUNCTION attendance_on_activity()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "mcq_attempts",
+        "trigger_name": "mcq_attempts_attendance_insert",
+        "action_statement": "EXECUTE FUNCTION attendance_on_activity()",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "mcq_attempts",
+        "trigger_name": "mcq_attempts_attendance_update",
+        "action_statement": "EXECUTE FUNCTION attendance_on_activity()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "submissions",
+        "trigger_name": "submissions_attendance_insert",
+        "action_statement": "EXECUTE FUNCTION attendance_on_activity()",
+        "event_manipulation": "INSERT"
+      },
+      {
+        "event_object_table": "test_series_attempts",
+        "trigger_name": "test_series_attempts_attendance_update",
+        "action_statement": "EXECUTE FUNCTION attendance_on_activity()",
+        "event_manipulation": "UPDATE"
+      },
+      {
+        "event_object_table": "lesson_progress",
+        "trigger_name": "lesson_progress_zz_forward_only",
+        "action_statement": "EXECUTE FUNCTION lesson_progress_forward_only()",
+        "event_manipulation": "UPDATE"
+      }
+    ],
+    "grants": [
+      {
+        "table_name": "academic_years",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "academic_years",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "academic_years",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "academic_years",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "access_settings",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "access_settings",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "access_settings",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "access_settings",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "admin_role_permissions",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "admin_role_permissions",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "admin_role_permissions",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "admin_role_permissions",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "admin_roles",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "admin_roles",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "admin_roles",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "admin_roles",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "attendance",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "audit_log",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "bookmarks",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "bookmarks",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "bookmarks",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "bookmarks",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "branches",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "branches",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "branches",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "branches",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "class_members",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "class_members",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "class_members",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "class_members",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "classes",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "classes",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "classes",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "classes",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "discussion_replies",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "discussion_replies",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "discussion_replies",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "discussion_replies",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "discussion_threads",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "discussion_threads",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "discussion_threads",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "discussion_threads",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "discussion_votes",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "discussion_votes",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "discussion_votes",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "feature_flags",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "feature_flags",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "institutes",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "institutes",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "institutes",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "institutes",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "invitations",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "invitations",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "invitations",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "invitations",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "join_codes",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "join_codes",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "join_codes",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "join_codes",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "lesson_progress",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "lesson_progress",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "lesson_progress",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "mcq_answer_keys",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "mcq_answer_keys",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "mcq_answer_keys",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "mcq_answer_keys",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "mcq_attempts",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "mcq_attempts",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "mcq_attempts",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "mcq_sets",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "mcq_sets",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "mcq_sets",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "mcq_sets",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "mcqs",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "mcqs",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "mcqs",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "mcqs",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "playground_programs",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "playground_programs",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "playground_programs",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "playground_programs",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "problem_solutions",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "problem_solutions",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "problem_solutions",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "problem_solutions",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "problem_tutorials",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "problem_tutorials",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "problem_tutorials",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "problem_tutorials",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "problem_validations",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "problem_validations",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "problem_validations",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "problem_validations",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "problems",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "problems",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "problems",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "problems",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "profiles",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "profiles",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "sections",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "sections",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "sections",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "sections",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "sets",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "sets",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "sets",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "sets",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "sheets",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "sheets",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "sheets",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "sheets",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "submissions",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "submissions",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "submissions",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_cases",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "test_cases",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_cases",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_cases",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_series",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "test_series",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_series",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_series_answer_keys",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_series_answer_keys",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_answers",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_attempts",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_coding_cases",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "test_series_coding_cases",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_series_coding_cases",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_coding_cases",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_series_coding_drafts",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "test_series_coding_drafts",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_series_coding_drafts",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_coding_drafts",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_series_coding_questions",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "test_series_coding_questions",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_series_coding_questions",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_coding_questions",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_series_coding_submissions",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_feedback",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_questions",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "test_series_questions",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "test_series_questions",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "test_series_questions",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      },
+      {
+        "table_name": "test_series_violations",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "topics",
+        "grantee": "authenticated",
+        "privilege_type": "DELETE"
+      },
+      {
+        "table_name": "topics",
+        "grantee": "authenticated",
+        "privilege_type": "INSERT"
+      },
+      {
+        "table_name": "topics",
+        "grantee": "authenticated",
+        "privilege_type": "SELECT"
+      },
+      {
+        "table_name": "topics",
+        "grantee": "authenticated",
+        "privilege_type": "UPDATE"
+      }
+    ]
+  }
+}

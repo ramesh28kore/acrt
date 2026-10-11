@@ -34,3 +34,10 @@ supabase/.temp/
 *.njsproj
 *.sln
 *.sw?
+
+# Local importer artifacts and the unused npm lockfile
+__pycache__/
+*.py[cod]
+importer/private/
+importer/reports/
+package-lock.json

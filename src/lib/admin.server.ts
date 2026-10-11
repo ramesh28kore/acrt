@@ -1,6 +1,7 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Database, Json } from "@/integrations/supabase/types";
 import type { Role } from "./me";
+import { loadIdentity } from "./identity";
 import { userPageSchema, activityPageSchema } from "./super-admin.contracts";
 import {
   adminOverviewSchema,
@@ -40,15 +41,10 @@ type AdminDatabase = Omit<Database, "public"> & {
 type Client = SupabaseClient<Database>;
 const adminClient = (client: Client) => client as unknown as SupabaseClient<AdminDatabase>;
 export async function assertInstituteAdmin(client: Client, userId: string) {
-  const [profile, roles] = await Promise.all([
-    client.from("profiles").select("is_active,institute_id").eq("id", userId).maybeSingle(),
-    client.from("user_roles").select("role").eq("user_id", userId),
-  ]);
-  if (profile.error || roles.error)
-    throw new Error("Could not verify your permissions. Try again.");
-  if (!profile.data?.is_active || !roles.data?.some((entry) => entry.role === "admin"))
+  const identity = await loadIdentity(client, userId);
+  if (!identity?.active || !identity.roles.includes("admin"))
     throw new Error("An active admin account is required.");
-  if (!profile.data.institute_id)
+  if (!identity.profile.institute_id)
     throw new Error("Your admin account needs an institute. Contact the Super Admin.");
 }
 function rpcError(error: { code?: string; message: string } | null) {

@@ -107,7 +107,7 @@ export type CreateAccount = z.infer<typeof createAccountSchema>;
 export type InstituteFields = z.infer<typeof instituteFieldsSchema>;
 
 export const ACTION_LABELS: Record<string, string> = {
-  sign_in: "Signed in",
+  "auth.login": "Signed in",
   user_created: "User created",
   user_updated: "User updated",
   role_changed: "Role changed",

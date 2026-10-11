@@ -10,7 +10,7 @@ export const Route = createFileRoute("/_authenticated")({
       throw redirect({ to: "/auth", search: { redirect: location.href } });
     }
     const me = await context.queryClient.ensureQueryData(meQuery);
-    if (me?.profile && !me.profile.is_active) {
+    if (!me?.profile || !me.profile.is_active) {
       await supabase.auth.signOut();
       context.queryClient.clear();
       throw redirect({ to: "/auth", search: { redirect: undefined } });

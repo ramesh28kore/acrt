@@ -11,7 +11,8 @@ export const Route = createFileRoute("/_authenticated/dashboard")({
   component: () => (
     <AppShell title="No role assigned yet">
       <p className="text-muted-foreground">
-        Your account exists but hasn't been given a role. Please ask your college admin to set it up.
+        Your account exists but hasn't been given a role. Please ask your college admin to set it
+        up.
       </p>
     </AppShell>
   ),

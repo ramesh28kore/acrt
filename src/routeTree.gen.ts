@@ -15,8 +15,19 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
 import { Route as AuthenticatedFacultyRouteImport } from './routes/_authenticated/faculty'
+import { Route as AuthenticatedPlaygroundRouteImport } from './routes/_authenticated/playground'
+import { Route as AuthenticatedScheduleRouteImport } from './routes/_authenticated/schedule'
 import { Route as AuthenticatedStudentRouteImport } from './routes/_authenticated/student'
 import { Route as AuthenticatedSuperAdminRouteImport } from './routes/_authenticated/super-admin'
+import { Route as AuthenticatedTestSeriesRouteImport } from './routes/_authenticated/test-series'
+import { Route as AuthenticatedLearnIndexRouteImport } from './routes/_authenticated/learn.index'
+import { Route as AuthenticatedPracticeIndexRouteImport } from './routes/_authenticated/practice.index'
+import { Route as AuthenticatedPracticeProblemIdRouteImport } from './routes/_authenticated/practice.$problemId'
+import { Route as AuthenticatedQuizzesIndexRouteImport } from './routes/_authenticated/quizzes.index'
+import { Route as AuthenticatedQuizzesSetIdRouteImport } from './routes/_authenticated/quizzes.$setId'
+import { Route as AuthenticatedTestSeriesTestIdRouteImport } from './routes/_authenticated/test-series.$testId'
+import { Route as AuthenticatedLearnTopicIdIndexRouteImport } from './routes/_authenticated/learn.$topicId.index'
+import { Route as AuthenticatedLearnTopicIdSheetIdRouteImport } from './routes/_authenticated/learn.$topicId.$sheetId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -47,6 +58,16 @@ const AuthenticatedFacultyRoute = AuthenticatedFacultyRouteImport.update({
   path: '/faculty',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedPlaygroundRoute = AuthenticatedPlaygroundRouteImport.update({
+  id: '/playground',
+  path: '/playground',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedScheduleRoute = AuthenticatedScheduleRouteImport.update({
+  id: '/schedule',
+  path: '/schedule',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 const AuthenticatedStudentRoute = AuthenticatedStudentRouteImport.update({
   id: '/student',
   path: '/student',
@@ -57,6 +78,58 @@ const AuthenticatedSuperAdminRoute = AuthenticatedSuperAdminRouteImport.update({
   path: '/super-admin',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedTestSeriesRoute = AuthenticatedTestSeriesRouteImport.update({
+  id: '/test-series',
+  path: '/test-series',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedLearnIndexRoute = AuthenticatedLearnIndexRouteImport.update({
+  id: '/learn/',
+  path: '/learn/',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedPracticeIndexRoute =
+  AuthenticatedPracticeIndexRouteImport.update({
+    id: '/practice/',
+    path: '/practice/',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedPracticeProblemIdRoute =
+  AuthenticatedPracticeProblemIdRouteImport.update({
+    id: '/practice/$problemId',
+    path: '/practice/$problemId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedQuizzesIndexRoute =
+  AuthenticatedQuizzesIndexRouteImport.update({
+    id: '/quizzes/',
+    path: '/quizzes/',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedQuizzesSetIdRoute =
+  AuthenticatedQuizzesSetIdRouteImport.update({
+    id: '/quizzes/$setId',
+    path: '/quizzes/$setId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedTestSeriesTestIdRoute =
+  AuthenticatedTestSeriesTestIdRouteImport.update({
+    id: '/$testId',
+    path: '/$testId',
+    getParentRoute: () => AuthenticatedTestSeriesRoute,
+  } as any)
+const AuthenticatedLearnTopicIdIndexRoute =
+  AuthenticatedLearnTopicIdIndexRouteImport.update({
+    id: '/learn/$topicId/',
+    path: '/learn/$topicId/',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedLearnTopicIdSheetIdRoute =
+  AuthenticatedLearnTopicIdSheetIdRouteImport.update({
+    id: '/learn/$topicId/$sheetId',
+    path: '/learn/$topicId/$sheetId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -64,8 +137,19 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AuthenticatedAdminRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/faculty': typeof AuthenticatedFacultyRoute
+  '/playground': typeof AuthenticatedPlaygroundRoute
+  '/schedule': typeof AuthenticatedScheduleRoute
   '/student': typeof AuthenticatedStudentRoute
   '/super-admin': typeof AuthenticatedSuperAdminRoute
+  '/test-series': typeof AuthenticatedTestSeriesRouteWithChildren
+  '/practice/$problemId': typeof AuthenticatedPracticeProblemIdRoute
+  '/quizzes/$setId': typeof AuthenticatedQuizzesSetIdRoute
+  '/test-series/$testId': typeof AuthenticatedTestSeriesTestIdRoute
+  '/learn/': typeof AuthenticatedLearnIndexRoute
+  '/practice/': typeof AuthenticatedPracticeIndexRoute
+  '/quizzes/': typeof AuthenticatedQuizzesIndexRoute
+  '/learn/$topicId/$sheetId': typeof AuthenticatedLearnTopicIdSheetIdRoute
+  '/learn/$topicId/': typeof AuthenticatedLearnTopicIdIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -73,8 +157,19 @@ export interface FileRoutesByTo {
   '/admin': typeof AuthenticatedAdminRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/faculty': typeof AuthenticatedFacultyRoute
+  '/playground': typeof AuthenticatedPlaygroundRoute
+  '/schedule': typeof AuthenticatedScheduleRoute
   '/student': typeof AuthenticatedStudentRoute
   '/super-admin': typeof AuthenticatedSuperAdminRoute
+  '/test-series': typeof AuthenticatedTestSeriesRouteWithChildren
+  '/practice/$problemId': typeof AuthenticatedPracticeProblemIdRoute
+  '/quizzes/$setId': typeof AuthenticatedQuizzesSetIdRoute
+  '/test-series/$testId': typeof AuthenticatedTestSeriesTestIdRoute
+  '/learn': typeof AuthenticatedLearnIndexRoute
+  '/practice': typeof AuthenticatedPracticeIndexRoute
+  '/quizzes': typeof AuthenticatedQuizzesIndexRoute
+  '/learn/$topicId/$sheetId': typeof AuthenticatedLearnTopicIdSheetIdRoute
+  '/learn/$topicId': typeof AuthenticatedLearnTopicIdIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -84,8 +179,19 @@ export interface FileRoutesById {
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/_authenticated/faculty': typeof AuthenticatedFacultyRoute
+  '/_authenticated/playground': typeof AuthenticatedPlaygroundRoute
+  '/_authenticated/schedule': typeof AuthenticatedScheduleRoute
   '/_authenticated/student': typeof AuthenticatedStudentRoute
   '/_authenticated/super-admin': typeof AuthenticatedSuperAdminRoute
+  '/_authenticated/test-series': typeof AuthenticatedTestSeriesRouteWithChildren
+  '/_authenticated/practice/$problemId': typeof AuthenticatedPracticeProblemIdRoute
+  '/_authenticated/quizzes/$setId': typeof AuthenticatedQuizzesSetIdRoute
+  '/_authenticated/test-series/$testId': typeof AuthenticatedTestSeriesTestIdRoute
+  '/_authenticated/learn/': typeof AuthenticatedLearnIndexRoute
+  '/_authenticated/practice/': typeof AuthenticatedPracticeIndexRoute
+  '/_authenticated/quizzes/': typeof AuthenticatedQuizzesIndexRoute
+  '/_authenticated/learn/$topicId/$sheetId': typeof AuthenticatedLearnTopicIdSheetIdRoute
+  '/_authenticated/learn/$topicId/': typeof AuthenticatedLearnTopicIdIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -95,8 +201,19 @@ export interface FileRouteTypes {
     | '/admin'
     | '/dashboard'
     | '/faculty'
+    | '/playground'
+    | '/schedule'
     | '/student'
     | '/super-admin'
+    | '/test-series'
+    | '/practice/$problemId'
+    | '/quizzes/$setId'
+    | '/test-series/$testId'
+    | '/learn/'
+    | '/practice/'
+    | '/quizzes/'
+    | '/learn/$topicId/$sheetId'
+    | '/learn/$topicId/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -104,8 +221,19 @@ export interface FileRouteTypes {
     | '/admin'
     | '/dashboard'
     | '/faculty'
+    | '/playground'
+    | '/schedule'
     | '/student'
     | '/super-admin'
+    | '/test-series'
+    | '/practice/$problemId'
+    | '/quizzes/$setId'
+    | '/test-series/$testId'
+    | '/learn'
+    | '/practice'
+    | '/quizzes'
+    | '/learn/$topicId/$sheetId'
+    | '/learn/$topicId'
   id:
     | '__root__'
     | '/'
@@ -114,8 +242,19 @@ export interface FileRouteTypes {
     | '/_authenticated/admin'
     | '/_authenticated/dashboard'
     | '/_authenticated/faculty'
+    | '/_authenticated/playground'
+    | '/_authenticated/schedule'
     | '/_authenticated/student'
     | '/_authenticated/super-admin'
+    | '/_authenticated/test-series'
+    | '/_authenticated/practice/$problemId'
+    | '/_authenticated/quizzes/$setId'
+    | '/_authenticated/test-series/$testId'
+    | '/_authenticated/learn/'
+    | '/_authenticated/practice/'
+    | '/_authenticated/quizzes/'
+    | '/_authenticated/learn/$topicId/$sheetId'
+    | '/_authenticated/learn/$topicId/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -168,6 +307,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedFacultyRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/playground': {
+      id: '/_authenticated/playground'
+      path: '/playground'
+      fullPath: '/playground'
+      preLoaderRoute: typeof AuthenticatedPlaygroundRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/schedule': {
+      id: '/_authenticated/schedule'
+      path: '/schedule'
+      fullPath: '/schedule'
+      preLoaderRoute: typeof AuthenticatedScheduleRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/student': {
       id: '/_authenticated/student'
       path: '/student'
@@ -182,23 +335,120 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedSuperAdminRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/test-series': {
+      id: '/_authenticated/test-series'
+      path: '/test-series'
+      fullPath: '/test-series'
+      preLoaderRoute: typeof AuthenticatedTestSeriesRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/learn/': {
+      id: '/_authenticated/learn/'
+      path: '/learn'
+      fullPath: '/learn/'
+      preLoaderRoute: typeof AuthenticatedLearnIndexRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/practice/': {
+      id: '/_authenticated/practice/'
+      path: '/practice'
+      fullPath: '/practice/'
+      preLoaderRoute: typeof AuthenticatedPracticeIndexRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/practice/$problemId': {
+      id: '/_authenticated/practice/$problemId'
+      path: '/practice/$problemId'
+      fullPath: '/practice/$problemId'
+      preLoaderRoute: typeof AuthenticatedPracticeProblemIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/quizzes/': {
+      id: '/_authenticated/quizzes/'
+      path: '/quizzes'
+      fullPath: '/quizzes/'
+      preLoaderRoute: typeof AuthenticatedQuizzesIndexRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/quizzes/$setId': {
+      id: '/_authenticated/quizzes/$setId'
+      path: '/quizzes/$setId'
+      fullPath: '/quizzes/$setId'
+      preLoaderRoute: typeof AuthenticatedQuizzesSetIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/test-series/$testId': {
+      id: '/_authenticated/test-series/$testId'
+      path: '/$testId'
+      fullPath: '/test-series/$testId'
+      preLoaderRoute: typeof AuthenticatedTestSeriesTestIdRouteImport
+      parentRoute: typeof AuthenticatedTestSeriesRoute
+    }
+    '/_authenticated/learn/$topicId/': {
+      id: '/_authenticated/learn/$topicId/'
+      path: '/learn/$topicId'
+      fullPath: '/learn/$topicId/'
+      preLoaderRoute: typeof AuthenticatedLearnTopicIdIndexRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/learn/$topicId/$sheetId': {
+      id: '/_authenticated/learn/$topicId/$sheetId'
+      path: '/learn/$topicId/$sheetId'
+      fullPath: '/learn/$topicId/$sheetId'
+      preLoaderRoute: typeof AuthenticatedLearnTopicIdSheetIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
+
+interface AuthenticatedTestSeriesRouteChildren {
+  AuthenticatedTestSeriesTestIdRoute: typeof AuthenticatedTestSeriesTestIdRoute
+}
+
+const AuthenticatedTestSeriesRouteChildren: AuthenticatedTestSeriesRouteChildren =
+  {
+    AuthenticatedTestSeriesTestIdRoute: AuthenticatedTestSeriesTestIdRoute,
+  }
+
+const AuthenticatedTestSeriesRouteWithChildren =
+  AuthenticatedTestSeriesRoute._addFileChildren(
+    AuthenticatedTestSeriesRouteChildren,
+  )
 
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedAdminRoute: typeof AuthenticatedAdminRoute
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedFacultyRoute: typeof AuthenticatedFacultyRoute
+  AuthenticatedPlaygroundRoute: typeof AuthenticatedPlaygroundRoute
+  AuthenticatedScheduleRoute: typeof AuthenticatedScheduleRoute
   AuthenticatedStudentRoute: typeof AuthenticatedStudentRoute
   AuthenticatedSuperAdminRoute: typeof AuthenticatedSuperAdminRoute
+  AuthenticatedTestSeriesRoute: typeof AuthenticatedTestSeriesRouteWithChildren
+  AuthenticatedPracticeProblemIdRoute: typeof AuthenticatedPracticeProblemIdRoute
+  AuthenticatedQuizzesSetIdRoute: typeof AuthenticatedQuizzesSetIdRoute
+  AuthenticatedLearnIndexRoute: typeof AuthenticatedLearnIndexRoute
+  AuthenticatedPracticeIndexRoute: typeof AuthenticatedPracticeIndexRoute
+  AuthenticatedQuizzesIndexRoute: typeof AuthenticatedQuizzesIndexRoute
+  AuthenticatedLearnTopicIdSheetIdRoute: typeof AuthenticatedLearnTopicIdSheetIdRoute
+  AuthenticatedLearnTopicIdIndexRoute: typeof AuthenticatedLearnTopicIdIndexRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedAdminRoute: AuthenticatedAdminRoute,
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedFacultyRoute: AuthenticatedFacultyRoute,
+  AuthenticatedPlaygroundRoute: AuthenticatedPlaygroundRoute,
+  AuthenticatedScheduleRoute: AuthenticatedScheduleRoute,
   AuthenticatedStudentRoute: AuthenticatedStudentRoute,
   AuthenticatedSuperAdminRoute: AuthenticatedSuperAdminRoute,
+  AuthenticatedTestSeriesRoute: AuthenticatedTestSeriesRouteWithChildren,
+  AuthenticatedPracticeProblemIdRoute: AuthenticatedPracticeProblemIdRoute,
+  AuthenticatedQuizzesSetIdRoute: AuthenticatedQuizzesSetIdRoute,
+  AuthenticatedLearnIndexRoute: AuthenticatedLearnIndexRoute,
+  AuthenticatedPracticeIndexRoute: AuthenticatedPracticeIndexRoute,
+  AuthenticatedQuizzesIndexRoute: AuthenticatedQuizzesIndexRoute,
+  AuthenticatedLearnTopicIdSheetIdRoute: AuthenticatedLearnTopicIdSheetIdRoute,
+  AuthenticatedLearnTopicIdIndexRoute: AuthenticatedLearnTopicIdIndexRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =

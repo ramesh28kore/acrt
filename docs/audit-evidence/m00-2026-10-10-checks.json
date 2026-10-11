@@ -1,0 +1,165 @@
+{
+  "auditDate": "2026-10-10",
+  "timeZone": "Asia/Calcutta",
+  "baseline": "c0d508f28f941b868f8c3ce9f2ccfdfa91b974f2",
+  "branch": "main",
+  "trackedFiles": 141,
+  "originalUncommitted": ["package-lock.json"],
+  "originalHashes": {
+    "bunLock": "cb87132ca219716fe5fd5984ef0068fcd33ffc69f4d5f70c10636075a1e90eac",
+    "packageLock": "afc8cd606cdd80bbedfb378a7b3fda139be047156d34932cef829d9e72e40e46"
+  },
+  "versions": {
+    "node": "24.19.0",
+    "bunAuditToolAndCI": "1.4.2",
+    "react": "19.2.8",
+    "reactDom": "19.2.8",
+    "typescript": "5.9.3",
+    "tailwindcss": "4.3.3",
+    "supabaseJs": "2.117.3",
+    "tanstackStart": "1.168.60",
+    "tanstackRouter": "1.170.41",
+    "routerPlugin": "1.168.42",
+    "reactQuery": "5.101.4",
+    "vite": "8.1.5",
+    "vitest": "4.1.11",
+    "nitro": "3.0.260603-beta",
+    "lovablePreset": "2.25.3",
+    "drizzleOrm": "0.45.4",
+    "drizzleKit": "0.31.11",
+    "postgresClient": "3.4.9",
+    "zod": "3.25.76",
+    "recharts": "2.15.4",
+    "testingLibraryReact": "16.3.3",
+    "pglite": "0.3.14",
+    "isolatedPostgres": "17.5",
+    "next": null,
+    "supabaseSsr": null,
+    "monaco": null,
+    "xlsx": null,
+    "hostedPostgres": null
+  },
+  "checks": {
+    "typecheck": {
+      "status": "PASS",
+      "exit": 0
+    },
+    "applicationTests": {
+      "status": "PASS",
+      "files": 4,
+      "tests": 15
+    },
+    "build": {
+      "exit": 0,
+      "summary": [
+        "✓ built in 1.04s",
+        "✓ built in 409ms",
+        "[nitro] o Building [Nitro] (preset: cloudflare-module, compatibility: 2026-10-10)",
+        "[nitro] √ Generated public .output/public",
+        "✓ built in 484ms",
+        "i Generated .output/server/wrangler.json",
+        "i Generated .output/public/_headers",
+        "i Generated .output/nitro.json",
+        "The plugin \"vite-tsconfig-paths\" is detected. Vite now supports tsconfig paths resolution natively via the resolve.tsconfigPaths option. You can remove the plugin and set resolve.tsconfigPaths: true in your Vite config instead.",
+        " WARN  inlineDynamicImports option is ignored because the codeSplitting option is specified."
+      ]
+    },
+    "adminDatabase": {
+      "status": "PASS",
+      "checks": 10
+    },
+    "superAdminDatabase": {
+      "status": "PASS",
+      "checks": 16
+    },
+    "expandedPolicyAudit": {
+      "status": "FAIL",
+      "pass": 3,
+      "fail": 6,
+      "scope": "Synthetic isolated PostgreSQL, not live JWT or hosted Supabase"
+    },
+    "localLint": {
+      "status": "FAIL",
+      "errors": 468,
+      "warnings": 6,
+      "note": "Before new audit evidence; 203 formatting errors are in Git-ignored .supabase.local scripts."
+    },
+    "githubLint": {
+      "status": "FAIL",
+      "errors": 265,
+      "warnings": 6
+    },
+    "dependencyAudit": {
+      "status": "FAIL",
+      "packages": [
+        "brace-expansion",
+        "esbuild",
+        "js-yaml",
+        "nanoid",
+        "shell-quote",
+        "source-map-js"
+      ],
+      "advisoryEntries": 15,
+      "severity": {
+        "high": 11,
+        "moderate": 3,
+        "critical": 1
+      }
+    },
+    "docker": {
+      "status": "RUNNING_SCHEMA_MISMATCH",
+      "project": "avanthi-portal",
+      "sourceLabel": "D:\\1.AVNT\\CRT",
+      "intendedDevelopmentRepository": "D:\\1.AVNT\\ACRT",
+      "userDecision": "Keep ACRT and reconcile its backend",
+      "publicTables": 45,
+      "policies": 92,
+      "publicFunctions": 68,
+      "appliedMigrations": 52,
+      "reason": "User started Docker. Read-only metadata confirms that the intended local backend is incompatible with ACRT's four-table schema. No database changes made."
+    },
+    "liveJwt": {
+      "status": "NOT RUN",
+      "reason": "Repository/backend schema mismatch; saved development accounts were not used against the mismatched backend."
+    },
+    "browser": {
+      "status": "NOT RUN"
+    },
+    "hostedSchema": {
+      "status": "NOT RUN"
+    },
+    "productionDeployment": {
+      "status": "NOT RUN"
+    },
+    "trackedCredentialPatternScan": {
+      "status": "PASS",
+      "matches": 0,
+      "limitation": "Recognized private-key/token formats only; not exhaustive secret detection"
+    }
+  },
+  "github": {
+    "run": "https://github.com/ramesh28kore/acrt/actions/runs/38055189711",
+    "head": "c0d508f28f941b868f8c3ce9f2ccfdfa91b974f2",
+    "conclusion": "failure",
+    "jobs": {
+      "typecheck": "success",
+      "test": "success",
+      "build": "success",
+      "lint": "failure",
+      "audit:deps": "failure"
+    },
+    "mainProtected": false,
+    "rulesets": [],
+    "deploymentRecords": [],
+    "commitStatuses": [],
+    "checkApps": ["github-actions"],
+    "note": "No deployment records or hosting checks does not prove that no externally managed hosting exists."
+  },
+  "boundaries": {
+    "applicationCodeChanged": false,
+    "migrationsChanged": false,
+    "projectDependenciesChanged": false,
+    "liveDatabaseChanged": false,
+    "githubWrites": false
+  }
+}

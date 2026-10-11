@@ -1,0 +1,735 @@
+{
+ "images": {
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cp-rectangle-2.png": {
+   "bytes": 11301,
+   "file": "cp-rectangle-2.png",
+   "sha256": "88c41e9fc93a1fc858c0ad756a521adf87ef4d4acd8e3985176a05e977e794d6"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-alphabets-in-hollow-rectangle.png": {
+   "bytes": 49843,
+   "file": "cx-alphabets-in-hollow-rectangle.png",
+   "sha256": "3879c248cc004a918503773d59902aa628630bc98f491f489a9e22b2d289e3c3"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-alphabets-in-inverted-right-angled-triangle.png": {
+   "bytes": 17579,
+   "file": "cx-alphabets-in-inverted-right-angled-triangle.png",
+   "sha256": "cf5d9cf100b745fa79e4b41e256f47d7e68d7fdbd550b71f0d610f8d60146838"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-alphabets-in-right-angled-triangle.png": {
+   "bytes": 14669,
+   "file": "cx-alphabets-in-right-angled-triangle.png",
+   "sha256": "2be5c85dab41f61bdef740dbd35ace818344bd94d86199feafacc71912a376d6"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-alphabets-in-square.png": {
+   "bytes": 15422,
+   "file": "cx-alphabets-in-square.png",
+   "sha256": "3ac791aa9509413d2315ec039e3359734279a0410e6a3c7c179b47c2e13b914a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-butterfly-2.png": {
+   "bytes": 31938,
+   "file": "cx-butterfly-2.png",
+   "sha256": "c4ef9ee61faaed816c735c1bbf3c0c1ccfb5cdfb2c6c217657ad40361f434e12"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-butterfly.png": {
+   "bytes": 18051,
+   "file": "cx-butterfly.png",
+   "sha256": "41bde18b983d3c009a5d0d149333f62a71a813f6c48bba17396b31ed71f8af38"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-number-hollow-diamond.png": {
+   "bytes": 14865,
+   "file": "cx-description-number-hollow-diamond.png",
+   "sha256": "bf23a0e13a19d1efcce2334d178e55fd136f5b8adfa6a19a62c3dcec4d6ea4a2"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-numbers-in-hollow-rectangle-3.png": {
+   "bytes": 14609,
+   "file": "cx-description-numbers-in-hollow-rectangle-3.png",
+   "sha256": "71d40ece1a5dd0f513f1a006f62ee8264f1148665b501a70e121a4eeac6997fe"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-numbers-in-hollow-square-2.png": {
+   "bytes": 16296,
+   "file": "cx-description-numbers-in-hollow-square-2.png",
+   "sha256": "5e1364f6b6444e49f80e27b11ece45012519aae2a90d92b43b46803ef4bef2b6"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-numbers-in-inverted-hollow-right-angled-triangle-2.png": {
+   "bytes": 18403,
+   "file": "cx-description-numbers-in-inverted-hollow-right-angled-triangle-2.png",
+   "sha256": "950c7891af74bfbbefe5b48274e11fa855111bee95fe4d852667f443e8618b5b"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-numbers-in-inverted-hollow-right-angled-triangle-3.png": {
+   "bytes": 11497,
+   "file": "cx-description-numbers-in-inverted-hollow-right-angled-triangle-3.png",
+   "sha256": "4a3db96a6d1e8e6f19876476831e5a61b438adf304450228c8a822439c3878ac"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-numbers-in-inverted-right-angled-triangle-2.png": {
+   "bytes": 18605,
+   "file": "cx-description-numbers-in-inverted-right-angled-triangle-2.png",
+   "sha256": "9ad21d7d070c09fa2be7e4ac4abcf95076319c5c14ac82d246e390376bdb47a0"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-description-numbers-in-right-angled-triangle-4.png": {
+   "bytes": 19575,
+   "file": "cx-description-numbers-in-right-angled-triangle-4.png",
+   "sha256": "ea716349666d60cbeb62473d365fda318599c7888d92f125646ffcaf32408837"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-diamond-2.png": {
+   "bytes": 15134,
+   "file": "cx-diamond-2.png",
+   "sha256": "b09834f1fddb04d5121983954ca36845c58635ae347ce34b209f1da709560f87"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-diamond.png": {
+   "bytes": 8805,
+   "file": "cx-diamond.png",
+   "sha256": "4f877618acf4102a9f891e7b025355db66737028b1fd585b70f8738bc44c564a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-digit-2.png": {
+   "bytes": 19255,
+   "file": "cx-digit-2.png",
+   "sha256": "069ca55f41f331ec7102e5d5b3c6f252c835444f9dd5031e534eecbf27403469"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-digit-3.png": {
+   "bytes": 58284,
+   "file": "cx-digit-3.png",
+   "sha256": "6242e6fe980f5392c2e5ee6677c14e77d367d144974535eb9c4575dde12ddf1c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-digit-5.png": {
+   "bytes": 44145,
+   "file": "cx-digit-5.png",
+   "sha256": "586179564830d96fd3c2e425145b1d90f3efeb8be344a2432d2194234ac5836f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-digit-6.png": {
+   "bytes": 15234,
+   "file": "cx-digit-6.png",
+   "sha256": "832afb602650f3d5ca70617ac428c0b2c6613275a25e91c74549a139fce0e95b"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-digit-8.png": {
+   "bytes": 27097,
+   "file": "cx-digit-8.png",
+   "sha256": "77a316987fcd5b63926a330792b419d497cbd0c9de968d9f11274a95e2340a15"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-digit-9.png": {
+   "bytes": 17145,
+   "file": "cx-digit-9.png",
+   "sha256": "6cbf834cfa02df1bd3b86e53bbb3f349f7b3c141c645daebea040f519460ae61"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-number-hollow-diamond.png": {
+   "bytes": 25083,
+   "file": "cx-explanation-number-hollow-diamond.png",
+   "sha256": "30d4d0502152b29ab64b1d5a301cc76040f1f14dc945027ac22293a7054da824"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-hollow-rectangle-2.png": {
+   "bytes": 16868,
+   "file": "cx-explanation-numbers-in-hollow-rectangle-2.png",
+   "sha256": "7aaffade7b43887c2e3f830a57db2a7d21facd73e0998e451a4886b9813413ad"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-hollow-rectangle-3-v2.png": {
+   "bytes": 16619,
+   "file": "cx-explanation-numbers-in-hollow-rectangle-3-v2.png",
+   "sha256": "356870c7ded09cae1fe33dcc3270daba3f0e0f9743ff84ff970ae623e0fc5a3f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-hollow-square-2.png": {
+   "bytes": 11614,
+   "file": "cx-explanation-numbers-in-hollow-square-2.png",
+   "sha256": "7da7b5675f192ecf05f26cb6532732e1b0d1e2a32894dbd7b2493e5042524831"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-inverted-hollow-right-angled-triangle-2.png": {
+   "bytes": 13590,
+   "file": "cx-explanation-numbers-in-inverted-hollow-right-angled-triangle-2.png",
+   "sha256": "032b73ec53936c09ec7ab6ddbd8e66fd3c1973d502943340a08ba9f42572a300"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-inverted-hollow-right-angled-triangle-3.png": {
+   "bytes": 13268,
+   "file": "cx-explanation-numbers-in-inverted-hollow-right-angled-triangle-3.png",
+   "sha256": "758ead2f28fdce403231b137beaaf0d046d9ab975b401f9616821f80e1589876"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-inverted-right-angled-triangle-2.png": {
+   "bytes": 14466,
+   "file": "cx-explanation-numbers-in-inverted-right-angled-triangle-2.png",
+   "sha256": "e92b484c278acbb902062dc2e7eff87b40e6e8190e1b054491ec35815a80589f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-explanation-numbers-in-right-angled-triangle-4.png": {
+   "bytes": 15668,
+   "file": "cx-explanation-numbers-in-right-angled-triangle-4.png",
+   "sha256": "0796aa8269e93737458cc2ab61525598917226dd32083c9ba213a63c5b1f4773"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-butterfly.png": {
+   "bytes": 24388,
+   "file": "cx-hollow-butterfly.png",
+   "sha256": "256ad52ee4d43cb3ff364e59ec1ede8ec3f4a83e9f2e6ee678108bf43baea2f0"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-diamond.png": {
+   "bytes": 18742,
+   "file": "cx-hollow-diamond.png",
+   "sha256": "bc5a300f9f36f253290beaf01441fe1baf76d1208de84079d0d529cbc489cc76"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-pyramid-2.png": {
+   "bytes": 12086,
+   "file": "cx-hollow-pyramid-2.png",
+   "sha256": "9bef07d5351c6d0a839f3a058a51f3c15e02fb3af84f2a185a090fc81d1d23f1"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-pyramid-3.png": {
+   "bytes": 15470,
+   "file": "cx-hollow-pyramid-3.png",
+   "sha256": "e9455a894f72c59181317fb12d9f16d1e0fe57cc9e069af1f5f1eafe00255fd7"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-pyramid.png": {
+   "bytes": 12606,
+   "file": "cx-hollow-pyramid.png",
+   "sha256": "073bc8f064e7976461a2250f5813fa5343f3f987980e1fee648ece118a578147"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-rectangle-2.png": {
+   "bytes": 18949,
+   "file": "cx-hollow-rectangle-2.png",
+   "sha256": "ae1c0ced11a08c9851b8968ce3d76b7131f01e8a949fe15376098e9a89f30e2b"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-rectangle.png": {
+   "bytes": 14448,
+   "file": "cx-hollow-rectangle.png",
+   "sha256": "e144b1fd8ca8d3d29cc754b34a1bb8651249abc07b3314ae0dc31a4c7addff76"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-right-angled-triangle-2-v2.png": {
+   "bytes": 10005,
+   "file": "cx-hollow-right-angled-triangle-2-v2.png",
+   "sha256": "37b18f9019da5b3a3b7f5ecf28edb79f7b1669a0ea9d9f8eddf34991737d94f7"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-right-angled-triangle-3.png": {
+   "bytes": 9658,
+   "file": "cx-hollow-right-angled-triangle-3.png",
+   "sha256": "df3cab36f9cb0458412d5e1972d74ffe2d284e96c04d2935a8d47afe1e91cf3b"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-right-angled-triangle-4.png": {
+   "bytes": 11807,
+   "file": "cx-hollow-right-angled-triangle-4.png",
+   "sha256": "b43d6534c716e3c4d8633b5cb865a756f02db3e34d22f3b39b49a445892cc128"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-right-angled-triangle-5.png": {
+   "bytes": 9422,
+   "file": "cx-hollow-right-angled-triangle-5.png",
+   "sha256": "5a48758427e32371a92c6096e441ee5d3c70998072f8172a612c780f97d529d9"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-right-angled-triangle-6.png": {
+   "bytes": 7611,
+   "file": "cx-hollow-right-angled-triangle-6.png",
+   "sha256": "e994badb54349fdddc2d4d490816dbd13f6176feb0e05664ac74840043c5f52f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-right-angled-triangle.png": {
+   "bytes": 9314,
+   "file": "cx-hollow-right-angled-triangle.png",
+   "sha256": "69708789153a2636a240a21798551f3707e690e598c10d333400a423816f39bb"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-hollow-square.png": {
+   "bytes": 7289,
+   "file": "cx-hollow-square.png",
+   "sha256": "e988af50561c2b83fd2499aa4dd4e04114749e40e851c334072fd5610d16262c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-identify-mistake-numbers-in-inverted-right-angled-triangle-2.png": {
+   "bytes": 16960,
+   "file": "cx-identify-mistake-numbers-in-inverted-right-angled-triangle-2.png",
+   "sha256": "9ec3e67c8e50d316fe2a727d5cbb79eca959fbdf22c2514294520cc775767abd"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-identify-mistake-pyramid.png": {
+   "bytes": 5991,
+   "file": "cx-identify-mistake-pyramid.png",
+   "sha256": "50a2f1b3b463ee70beb3078ad1662af132ea9d89613f845aa68a8fc4091e498d"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-hollow-pyramid-2.png": {
+   "bytes": 7428,
+   "file": "cx-inverted-hollow-pyramid-2.png",
+   "sha256": "b81128cdbbbbc95320b8a0407b6a733f3e6e3866d9bf856442a18fa6e373a682"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-hollow-pyramid.png": {
+   "bytes": 11177,
+   "file": "cx-inverted-hollow-pyramid.png",
+   "sha256": "5b7ed73cac48bbff1c27ec21e758739e535359cf19cb07efdae148943e52c35b"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-pyramid-2.png": {
+   "bytes": 12710,
+   "file": "cx-inverted-pyramid-2.png",
+   "sha256": "08f2024d4fccd878837f918c84238b7f48b909e6db15e35a78262d7642122362"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-pyramid-3.png": {
+   "bytes": 7869,
+   "file": "cx-inverted-pyramid-3.png",
+   "sha256": "d8543c14a6a3ee7b282a7fca9e2bb426f177a74767133ddad160f55789866a29"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-pyramid.png": {
+   "bytes": 9435,
+   "file": "cx-inverted-pyramid.png",
+   "sha256": "48ec2b3204829c6b1d531e98e0f7a718706a374182e2c4e0f7df315a7cef09ca"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle-3.png": {
+   "bytes": 6209,
+   "file": "cx-inverted-right-angled-triangle-3.png",
+   "sha256": "6cc20f99e78c85da0035dfee46a935ae05fd9c60e2383b446836de6e1f4dcf46"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle-4.png": {
+   "bytes": 14519,
+   "file": "cx-inverted-right-angled-triangle-4.png",
+   "sha256": "6b36c8f11d559d1cdb2720a8169efbc9ad11b070c2403dd9b09f98d7e3ed6552"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle-5.png": {
+   "bytes": 24429,
+   "file": "cx-inverted-right-angled-triangle-5.png",
+   "sha256": "85e4466feca08e52ea48cc4344245c0dcaa7e815dceaf816395a7990b5a9b157"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle-6.png": {
+   "bytes": 7180,
+   "file": "cx-inverted-right-angled-triangle-6.png",
+   "sha256": "8d8f292f64bd3c7d46834223bcaae247637f6caebc31596f0c55e1906ae975b7"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle-7.png": {
+   "bytes": 8544,
+   "file": "cx-inverted-right-angled-triangle-7.png",
+   "sha256": "798e6118961a5dabacce0d5d44a5a1590c6850cf286baa1c9cf0500983f50ff1"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle-8.png": {
+   "bytes": 32436,
+   "file": "cx-inverted-right-angled-triangle-8.png",
+   "sha256": "9f00a939ee3e260c543fb84293a852e551ca21e907603987858304e3811051f4"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-inverted-right-angled-triangle.png": {
+   "bytes": 10294,
+   "file": "cx-inverted-right-angled-triangle.png",
+   "sha256": "37b9933b65ada47a059f6a3906179648d474928a4af82b8a2106b1059e59a96a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-mpattern-with-stars-2.png": {
+   "bytes": 13997,
+   "file": "cx-mpattern-with-stars-2.png",
+   "sha256": "e91e4acf9f8e9a1dbd57d4235f1a82940367daeea9113b053661a6cbab82eb7d"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-mpattern-with-stars.png": {
+   "bytes": 19517,
+   "file": "cx-mpattern-with-stars.png",
+   "sha256": "95bb4bd40dcb5f30adaab2e4f812bf63e08252eb205d4ea9e27f46f0fbe11125"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-number-diamond.png": {
+   "bytes": 29636,
+   "file": "cx-number-diamond.png",
+   "sha256": "cd0f584bb4bd387b063b23ad325d5a2934f23f57ce8d48b6d4db9e1db797f4b4"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-pyramid.png": {
+   "bytes": 19896,
+   "file": "cx-numbers-in-hollow-pyramid.png",
+   "sha256": "bfd2feadab1108e78956b34bb896124cbeb84d8ba2aec8922ec4ba3763454b37"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-rectangle.png": {
+   "bytes": 13140,
+   "file": "cx-numbers-in-hollow-rectangle.png",
+   "sha256": "c4d9e454064f9f15b8f7a52a745458cb888e05c4e8543fa83696088501b6e8c6"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-right-angled-triangle-2.png": {
+   "bytes": 17860,
+   "file": "cx-numbers-in-hollow-right-angled-triangle-2.png",
+   "sha256": "bb708d45d537ff2e7f07414fa293fbb21bc3896ee40b16b74ca0d5bfe1b2da74"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-right-angled-triangle-3.png": {
+   "bytes": 13630,
+   "file": "cx-numbers-in-hollow-right-angled-triangle-3.png",
+   "sha256": "edee1b6bb45df9fa542fcd8916e27d03f9a9e4880fab613971860ca45e3598b0"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-right-angled-triangle.png": {
+   "bytes": 14785,
+   "file": "cx-numbers-in-hollow-right-angled-triangle.png",
+   "sha256": "38215aafdbafb109fd955f85617f1cef8ac39b15d712360a358531a9c600bd25"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-square-2.png": {
+   "bytes": 16378,
+   "file": "cx-numbers-in-hollow-square-2.png",
+   "sha256": "ffb99874dfbcc43c695462a8bb09a95a94684eec49be290f8baff71a1de1cc94"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-hollow-square.png": {
+   "bytes": 13288,
+   "file": "cx-numbers-in-hollow-square.png",
+   "sha256": "8bcb57f420503f3e1803b084592c95008f51292faf26635163efce7974ba62cb"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-hollow-pyramid.png": {
+   "bytes": 19677,
+   "file": "cx-numbers-in-inverted-hollow-pyramid.png",
+   "sha256": "1b1d2cd585842fe186bb8a42728b62df083bfee49ede46bf1678898b988d2443"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-hollow-right-angled-triangle-2-v2.png": {
+   "bytes": 8680,
+   "file": "cx-numbers-in-inverted-hollow-right-angled-triangle-2-v2.png",
+   "sha256": "29515c4043dadcf0a8755e1324f90ddf08e2fbfd1b934f70922a200c667d25eb"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-hollow-right-angled-triangle-description.png": {
+   "bytes": 20219,
+   "file": "cx-numbers-in-inverted-hollow-right-angled-triangle-description.png",
+   "sha256": "e6b841d0403aaef7d4e178fb8a1ab69e88d50bf741ea00a458f49e25306caa12"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-hollow-right-angled-triangle-explanation.png": {
+   "bytes": 13201,
+   "file": "cx-numbers-in-inverted-hollow-right-angled-triangle-explanation.png",
+   "sha256": "33975ee6c027d5a2d64bbf7355f5402493e6952f369caa9ecbecc833843d6d3f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-pyramid.png": {
+   "bytes": 20913,
+   "file": "cx-numbers-in-inverted-pyramid.png",
+   "sha256": "70308c2e77104f307fbca63396c0a3db5a62faf76171f9bd106ae4f274245096"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-right-angled-triangle-3.png": {
+   "bytes": 14794,
+   "file": "cx-numbers-in-inverted-right-angled-triangle-3.png",
+   "sha256": "098efd0b7518ec9a7aa03809f420c4b1be01e6aa586f23e796a440a4f3c73b8c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-inverted-right-angled-triangle.png": {
+   "bytes": 15801,
+   "file": "cx-numbers-in-inverted-right-angled-triangle.png",
+   "sha256": "f4e4f2a5efe5cf5c62fc60ba107b0343dc113e3fd885e6fcaa05a0a8863dcd38"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-pyramid-3.png": {
+   "bytes": 23150,
+   "file": "cx-numbers-in-pyramid-3.png",
+   "sha256": "2693a9e1e87d366a2337d41a39edbeb03217ffedb51b0739714050b56489a24c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-pyramid.png": {
+   "bytes": 22714,
+   "file": "cx-numbers-in-pyramid.png",
+   "sha256": "25a9e2bd9a1326099c876e438b4362627a7c48648727b410ff9f30814a1a9c7f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-rectangle-2.png": {
+   "bytes": 9879,
+   "file": "cx-numbers-in-rectangle-2.png",
+   "sha256": "1cd23ccc1a5c8c38acf6bf9b8ea97b8b999932aa625ca963e6a5cd9a0bf1bf6c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-rectangle.png": {
+   "bytes": 10247,
+   "file": "cx-numbers-in-rectangle.png",
+   "sha256": "f5b435800472698edf4290070224c2f88534d692fcea914278724b3dcdece24f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-right-angled-triangle-2.png": {
+   "bytes": 12632,
+   "file": "cx-numbers-in-right-angled-triangle-2.png",
+   "sha256": "cf18140f15cf2cd24272c264face00f139baf435e5755165bc06e11eac7ea3b1"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-right-angled-triangle-3.png": {
+   "bytes": 21592,
+   "file": "cx-numbers-in-right-angled-triangle-3.png",
+   "sha256": "8068b9f7547a0f806eeccf9c11f1cc3b23d2c6e9fe5d14652be7d057630d23fb"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-right-angled-triangle-4.png": {
+   "bytes": 22036,
+   "file": "cx-numbers-in-right-angled-triangle-4.png",
+   "sha256": "af3b7d117ac9d3bd8b538e762a2af4fdd2af0af9635937aba0ea59a0e05de940"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-right-angled-triangle-6.png": {
+   "bytes": 17590,
+   "file": "cx-numbers-in-right-angled-triangle-6.png",
+   "sha256": "c21588655b136d27b22da6256f26259d08611a70d50a024c76020a82357eaafd"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-right-angled-triangle.png": {
+   "bytes": 15745,
+   "file": "cx-numbers-in-right-angled-triangle.png",
+   "sha256": "ea3137e55a0efd6ac05831d769dda719194fbb7ecbf978baa615a7a42542c278"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-square-2.png": {
+   "bytes": 11211,
+   "file": "cx-numbers-in-square-2.png",
+   "sha256": "693cf659a549128c6c88bd6745be23a796724ec7ab1d7db1d0b2bfde97996360"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-square-3.png": {
+   "bytes": 12527,
+   "file": "cx-numbers-in-square-3.png",
+   "sha256": "c5988ca7ce3215986d1f8bf483badf84d0f6e62ad54c0e713b6d8a8d3dc8f297"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-in-square.png": {
+   "bytes": 19884,
+   "file": "cx-numbers-in-square.png",
+   "sha256": "aec69145d596746b0099609783f2c63c793ee35957f57fb6eaeda81621c37821"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-numbers-rectangle-3.png": {
+   "bytes": 10055,
+   "file": "cx-numbers-rectangle-3.png",
+   "sha256": "056bbe45aba55de7afc50876396deb3e4ad52dfad1419e2427364ff77aee9771"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-2.png": {
+   "bytes": 15149,
+   "file": "cx-pyramid-2.png",
+   "sha256": "d9d725c34cb5cf3e22b236f4318602c6b694d15bf6236afa88c02304f4779a16"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-3.png": {
+   "bytes": 7666,
+   "file": "cx-pyramid-3.png",
+   "sha256": "631769107feb2ac39baf4c55afc836f14f85c68aa03744bda66adc7dd48842d4"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-4.png": {
+   "bytes": 18344,
+   "file": "cx-pyramid-4.png",
+   "sha256": "0151efb78c02a1d4ca54a4dac480244912aaf126dcc3292db0399a245bfa9683"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-5.png": {
+   "bytes": 17662,
+   "file": "cx-pyramid-5.png",
+   "sha256": "919e51b9bbac084fde47c8eeca5a55a3273df24a121a2146620a019c008c46b6"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-6-V2.png": {
+   "bytes": 8509,
+   "file": "cx-pyramid-6-v2.png",
+   "sha256": "3aca30da650be71d7979e55c218cd8cfa16f2e6203f85b0dc8970eaee1f55c8a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-7.png": {
+   "bytes": 41735,
+   "file": "cx-pyramid-7.png",
+   "sha256": "83f76584ff613a08d5802fb2a0a0c44e443aa76aa82c2eb8f93608ad93b72a7a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-8.png": {
+   "bytes": 16461,
+   "file": "cx-pyramid-8.png",
+   "sha256": "982e8816dd996b0f61e2b14571ccba1985346a4918dfe9a07bb82a332dd33f4f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid-9.png": {
+   "bytes": 22895,
+   "file": "cx-pyramid-9.png",
+   "sha256": "a8d1d5660f85e9e0ef8db6dc3b252586b9b934c0a98bf33488ac1e8a41d15ca8"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-pyramid.png": {
+   "bytes": 9427,
+   "file": "cx-pyramid.png",
+   "sha256": "8a53305b9e1ed39910e55737663b16d46704f003680b5f559c3afd32e0121813"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-rectangle-3.png": {
+   "bytes": 8073,
+   "file": "cx-rectangle-3.png",
+   "sha256": "8c31bccad442e1147224dd220b0202cad1902913dfa8de3f4cefe56130d27396"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-rectangle-4.png": {
+   "bytes": 19675,
+   "file": "cx-rectangle-4.png",
+   "sha256": "d905a638910c74ff5475c719f163441a08305fb97e2b8b1418f310dc8db3d398"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-rectangle-for-loop.png": {
+   "bytes": 55323,
+   "file": "cx-rectangle-for-loop.png",
+   "sha256": "97914018858edd764d0a1ecf321b0e522f504aeb22bc3b5940a7b5e3d1a7693a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-10.png": {
+   "bytes": 7609,
+   "file": "cx-right-angled-triangle-10.png",
+   "sha256": "4f4d1f3e7ab878204b92d0ad2bf53c94e77a2ebddbde2e168f57439eeeb3cf1c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-2-for-loop.jpg": {
+   "bytes": 25710,
+   "file": "cx-right-angled-triangle-2-for-loop.jpg",
+   "sha256": "71ac0761b71942eb66b68d20cca52a7289aa4c3b1f5bc6410ea2490e8d073aa6"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-4.jpg": {
+   "bytes": 19711,
+   "file": "cx-right-angled-triangle-4.jpg",
+   "sha256": "a1c47e131276ec28d401754a99da8af3f66a777893ee5232f4ec4f7c9e00a3fb"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-5.png": {
+   "bytes": 20821,
+   "file": "cx-right-angled-triangle-5.png",
+   "sha256": "4e8f5ffa0f179881ecb32b23794bc05e0665212e9ef49e6e88dc02fe9b208673"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-6.png": {
+   "bytes": 11377,
+   "file": "cx-right-angled-triangle-6.png",
+   "sha256": "b362e8ded666a59868015ddd51454d1a49c750781b73c1720dac16bf4a3cf6f0"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-7.png": {
+   "bytes": 32356,
+   "file": "cx-right-angled-triangle-7.png",
+   "sha256": "3a29984040d8345733127f19bab4d3effffce5643e666928a6e6eb4b594e7462"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-right-angled-triangle-for-loop.jpg": {
+   "bytes": 12140,
+   "file": "cx-right-angled-triangle-for-loop.jpg",
+   "sha256": "c35d5db3e24a0ecbabec98adc46f9bea42e8a55a8b83ec4a54de90e722dba48c"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-solid-and-hollow-diamond.png": {
+   "bytes": 18767,
+   "file": "cx-solid-and-hollow-diamond.png",
+   "sha256": "793c28c847f8ff4daab4754e8491cf2f164f29dae33ffe274b2faaf61bdbe0e5"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-square-3.png": {
+   "bytes": 11914,
+   "file": "cx-square-3.png",
+   "sha256": "0941520cc9ca7b83e301dc1cb9ef169938934392a0cc8b066af143787e7060b4"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-square-4.png": {
+   "bytes": 11803,
+   "file": "cx-square-4.png",
+   "sha256": "6cfaadfb8b719fe81765745ffe3e3226b44b86a1c731c0513377a30042c533cf"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-square-5.png": {
+   "bytes": 17739,
+   "file": "cx-square-5.png",
+   "sha256": "8550ffbb283d6cdfde38fa3253d9afc2203096201951b15622f36e9db2f31f68"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-two-right-angled-triangles-2.png": {
+   "bytes": 8384,
+   "file": "cx-two-right-angled-triangles-2.png",
+   "sha256": "9fd4f485a04e8ac007eb9dfded34af174c44ed04bd3712d4d3c048e116adaa5d"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-two-right-angled-triangles-for-loop.jpg": {
+   "bytes": 24862,
+   "file": "cx-two-right-angled-triangles-for-loop.jpg",
+   "sha256": "4889b4dc203e4e79a25c3ebba6108f3ab7f0fcd51a8281f8fc14bb0f5c8c687a"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-two-triangles-3.png": {
+   "bytes": 69775,
+   "file": "cx-two-triangles-3.png",
+   "sha256": "b762c623a1c1500efc9ec8ecfbde1515585947aa0b78105137b4f713530d1411"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/cx-wshape-with-stars-2.png": {
+   "bytes": 19085,
+   "file": "cx-wshape-with-stars-2.png",
+   "sha256": "4b7e161dff0cd785e091150dbede6ae4d2a6b9d77c4284d41c1775b9c2b34399"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/inprogress-question-print-input-cp.png": {
+   "bytes": 6115,
+   "file": "inprogress-question-print-input-cp.png",
+   "sha256": "2121b7877275eb94e48fb85ad5087eb62ce48cd486b0939ebea05821ccafce97"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/rectangle.png": {
+   "bytes": 11921,
+   "file": "rectangle.png",
+   "sha256": "40b6cd36955c6ab5ff8607d688ed615f41bf039987fef154a592433930da72a4"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/right-angled-triangle-2.png": {
+   "bytes": 11661,
+   "file": "right-angled-triangle-2.png",
+   "sha256": "5f2735f5281c5f08e855b3d2244fb5f3d793ea0b04aba813bd7a1547123dc3b0"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/right-angled-triangle-3.png": {
+   "bytes": 6879,
+   "file": "right-angled-triangle-3.png",
+   "sha256": "66fb14951de973f2c11bc5a04b54fd328c8252efc93b7b97345cdeb71b66cd21"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/right-angled-triangle.png": {
+   "bytes": 5000,
+   "file": "right-angled-triangle.png",
+   "sha256": "3ef18dbf33fa81100f7db2d2f86f5599c96802214d43edda890fa38a9dd800f9"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/sample-test-cases-print-input-cp.png": {
+   "bytes": 5260,
+   "file": "sample-test-cases-print-input-cp.png",
+   "sha256": "43988fd4bf3fb7057313c60b93ae2278182d875f3d5712f6dfd05bf9987a5ad2"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/solved-question-print-input-cp.png": {
+   "bytes": 6289,
+   "file": "solved-question-print-input-cp.png",
+   "sha256": "65b8c38ec1adab05b3f20f0820b69c021be145c5223e6a09f520d947fbe185d0"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/square-2.png": {
+   "bytes": 10888,
+   "file": "square-2.png",
+   "sha256": "c2b38f1723a440c3587e5f8f04bb56b6ddf161602e47e2e8f5d97f5469eef55f"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/square.png": {
+   "bytes": 9579,
+   "file": "square.png",
+   "sha256": "91c991915a16262e61f65fcc1179eeb35622e8083fef3fff7ee495f553b44417"
+  },
+  "https://assets.ccbp.in/frontend/content/programming-foundations/two-right-angled-triangles.png": {
+   "bytes": 10242,
+   "file": "two-right-angled-triangles.png",
+   "sha256": "fb6bfad95a406ee1c7d67b00cdaf2938c0357c3d0a9c4312cc2ec5e048b334d4"
+  },
+  "https://new-assets.ccbp.in/frontend/content/programming-foundations/Name_of_the_Polygon.png": {
+   "bytes": 75250,
+   "file": "name_of_the_polygon.png",
+   "sha256": "8d9ff35e5660693dcb017b8a8fa6c22046b3a9b49abdc3f6d3ad21aa610bd09e"
+  },
+  "https://new-assets.ccbp.in/frontend/content/programming-foundations/concatenation-game-image-2_c1.png": {
+   "bytes": 8764,
+   "file": "concatenation-game-image-2_c1.png",
+   "sha256": "0c3a1e765aa0f4a65f0d8ba2168a2eacfcabceed70b22b4e607a65b1f60899cb"
+  },
+  "https://new-assets.ccbp.in/frontend/content/programming-foundations/concatenation-game-v1.png": {
+   "bytes": 17997,
+   "file": "concatenation-game-v1.png",
+   "sha256": "106e2b190d3f725add7cf58cb771307965c2d916a30a9d6ea47a90cf47dafd2b"
+  },
+  "https://new-assets.ccbp.in/frontend/content/programming-foundations/diagnol-anti_r.png": {
+   "bytes": 13940,
+   "file": "diagnol-anti_r.png",
+   "sha256": "c062d959894a3c7499490bd5b2faf4b2572dd0a09dc63141678a8fe3b6239c2b"
+  },
+  "https://new-assets.ccbp.in/frontend/content/python-idp/addition-explanation-idp-prep-series.png": {
+   "bytes": 7226,
+   "file": "addition-explanation-idp-prep-series.png",
+   "sha256": "51a7fd9bc8483cbc5fac6c56681a0c70e78f0393355814bc0d180e227bd7b1af"
+  },
+  "https://res.cloudinary.com/learning-platform/image/fetch/dpr_auto,w_auto,f_auto,q_auto/https://nkb-backend-ccbp-media-static.s3.ap-south-1.amazonaws.com/prod/media/profile_pic/card-notes-attachment/3a175e7e-0365-4ac9-9620-fdda34c1ce31.png": {
+   "bytes": 3303,
+   "file": "3a175e7e-0365-4ac9-9620-fdda34c1ce31.png",
+   "sha256": "0bcdb4c385e80e4bbf62c9f2ab9d4c3df47fa1dd044430733c5295afeea4f82e"
+  },
+  "https://res.cloudinary.com/learning-platform/image/fetch/dpr_auto,w_auto,f_auto,q_auto/https://nkb-backend-ccbp-media-static.s3.ap-south-1.amazonaws.com/prod/media/profile_pic/card-notes-attachment/91e5d372-6a19-4698-82d6-a79da81b6482.png": {
+   "bytes": 18285,
+   "file": "91e5d372-6a19-4698-82d6-a79da81b6482.png",
+   "sha256": "aeb0a3d8a60ba04952d05351dd58d677246fe20aec30cc2217275a31dfd50de3"
+  },
+  "https://res.cloudinary.com/learning-platform/image/fetch/dpr_auto,w_auto,f_auto,q_auto/https://nkb-backend-ccbp-media-static.s3.ap-south-1.amazonaws.com/prod/media/profile_pic/card-notes-attachment/e4e9da74-fde2-4989-9a35-7e5ab572bd87.png": {
+   "bytes": 11396,
+   "file": "e4e9da74-fde2-4989-9a35-7e5ab572bd87.png",
+   "sha256": "11721017faddbc23ca3d1cc9ac21b488c2e5fe3ac75faef90e3f2e2fae74d19e"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/Screenshot+from+2023-03-30+17-36-39.png": {
+   "bytes": 44289,
+   "file": "screenshot-from-2023-03-30-17-36-39.png",
+   "sha256": "61aa772d8c0342e0a3a63b1c53fed001688b23ea79bf1367c67ae9fc0a7b2d7b"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/Screenshot+from+2023-03-30+17-53-49.png": {
+   "bytes": 43524,
+   "file": "screenshot-from-2023-03-30-17-53-49.png",
+   "sha256": "84a1d853a8a1de714513db330f3b773196c66e449857c5217b1a4d5173881802"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Image+Pasted+at+2023-3-30+14-06.png": {
+   "bytes": 15720,
+   "file": "image-pasted-at-2023-3-30-14-06.png",
+   "sha256": "0dc533526b57e3a65fb8dfac580c0e80cdfe2b048d085d65396bdb4a8a21cd16"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Image+Pasted+at+2023-3-31+12-15.png": {
+   "bytes": 20264,
+   "file": "image-pasted-at-2023-3-31-12-15.png",
+   "sha256": "a200f0c3759f2987c0c74219a9d436bfcf4e0df265faf2f296b2405d6fd25339"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Image+Pasted+at+2023-4-4+18-27.png": {
+   "bytes": 11332,
+   "file": "image-pasted-at-2023-4-4-18-27.png",
+   "sha256": "018099a2fc491795a0f8a473b32b805e5dada6ee6b0a61d85302b8c25a97a64e"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Screenshot+from+2023-04-13+12-58-46.png": {
+   "bytes": 86912,
+   "file": "screenshot-from-2023-04-13-12-58-46.png",
+   "sha256": "b4db9d9b1fa016c8fc7ce8993eb7e9886686c2b552132a23e13f34d4448e8240"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Screenshot+from+2023-04-13+17-02-00.png": {
+   "bytes": 60720,
+   "file": "screenshot-from-2023-04-13-17-02-00.png",
+   "sha256": "2414de59b8dfa27570ff774269d16263d8afab0ec2a42b4ce77a4449cb4b124b"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Screenshot+from+2023-04-13+17-03-43.png": {
+   "bytes": 59711,
+   "file": "screenshot-from-2023-04-13-17-03-43.png",
+   "sha256": "3e131509d156d1aff965ad31218f610d03ded2c8e6088137f7ab1e6d5cee8136"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Screenshot+from+2023-04-13+17-04-13.png": {
+   "bytes": 60043,
+   "file": "screenshot-from-2023-04-13-17-04-13.png",
+   "sha256": "6040b781268a7ef579e39f9efa93ab431c02e9b9ef04870003c94c5a22372677"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Screenshot+from+2023-04-13+17-08-15.png": {
+   "bytes": 61124,
+   "file": "screenshot-from-2023-04-13-17-08-15.png",
+   "sha256": "18c8deef6c32a14e0fbeb0223716c0494e95e9ab31ac6a52c7908fc6df73fb33"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/Screenshot+from+2023-04-13+17-27-14.png": {
+   "bytes": 60928,
+   "file": "screenshot-from-2023-04-13-17-27-14.png",
+   "sha256": "05e6b3fe9d282e6b47cbb8bf50092d75eebde171a8fae77d5213d7ce66677122"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/extended-slicing-1.png": {
+   "bytes": 28308,
+   "file": "extended-slicing-1.png",
+   "sha256": "ea116fd7e160ddc227a5d5f4f815ac6e9c9e6a2fbea0205a0a278a8a8f91aa59"
+  },
+  "https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/content/programming-foundations/extended-slicing-2.png": {
+   "bytes": 23748,
+   "file": "extended-slicing-2.png",
+   "sha256": "bb30efa965d4d5a2a13d6b2ab53cf897ffb84949500c28b8d9948477cc9bda4b"
+  }
+ },
+ "version": 1
+}

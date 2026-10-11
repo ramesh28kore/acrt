@@ -36,22 +36,22 @@ export const dashboardUpdateUser = createServerFn({ method: "POST" })
   .validator((data) => editUserSchema.parse(data))
   .handler(async ({ context, data }) => {
     const service = await import("./super-admin.server");
-    await service.assertSuperAdmin(context.supabase, context.userId);
-    return service.updateUser(context.supabase, data);
+    const actor = await service.assertSuperAdmin(context.supabase, context.userId);
+    return service.updateUser(context.supabase, actor, data);
   });
 export const dashboardCreateUser = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .validator((data) => createAccountSchema.parse(data))
   .handler(async ({ context, data }) => {
     const service = await import("./super-admin.server");
-    await service.assertSuperAdmin(context.supabase, context.userId);
-    return service.createAccount(context.supabase, data);
+    const actor = await service.assertSuperAdmin(context.supabase, context.userId);
+    return service.createAccount(context.supabase, actor, data);
   });
 export const dashboardSaveInstitute = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .validator((data) => instituteFieldsSchema.parse(data))
   .handler(async ({ context, data }) => {
     const service = await import("./super-admin.server");
-    await service.assertSuperAdmin(context.supabase, context.userId);
-    return service.saveInstitute(context.supabase, data);
+    const actor = await service.assertSuperAdmin(context.supabase, context.userId);
+    return service.saveInstitute(context.supabase, actor, data);
   });
